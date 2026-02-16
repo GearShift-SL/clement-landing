@@ -32,7 +32,7 @@ const { metadata } = Astro.props;
 <Layout metadata={metadata}>
   <div class="flex flex-col min-h-screen">
     <slot name="header">
-      <Header {...NAVIGATION().header} isSticky />
+      <Header {...NAVIGATION().header} isSticky isFloatingAtTop isFullWidth />
     </slot>
     <main class="grow">
       {/* Background Pattern */}
