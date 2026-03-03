@@ -53,33 +53,28 @@ type NavigationConfig = {
 
 export const SITE = (): SiteConfig => {
   return {
-    title: 'MyWebsite - This is my website',
-    description: 'This is my website description',
-    author: 'My Name',
+    title: 'Clement - Tu vivienda en Madrid',
+    description: 'Tu vivienda en Madrid',
+    author: 'Clement',
     siteUrl: 'https://clement.es/',
     ogImage: '/src/assets/images/og-image.jpg', // Needs to be an absolute path /src/...
-    locale: 'en_US',
-    twitter: { site: '@mywebsite' },
+    locale: 'es_ES',
+    twitter: { site: '@clement' },
   };
 };
 
 export const NAVIGATION = (): NavigationConfig => ({
   header: {
     links: [
-      { text: 'Home', href: '/' },
-      { text: 'About', href: '/about/' },
-      { text: 'Services', href: '/services/' },
-      { text: 'Contact', href: '/contact/' },
+      { text: 'Inicio', href: '/' },
+      { text: 'Promociones', href: '/#promociones' },
+      { text: 'Sobre nosotros', href: '/#sobre-nosotros' },
     ],
     actions: [
       {
-        href: `/#hero`,
-        text: 'Start syncing',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>`,
-      },
-      {
-        href: `/contact/`,
-        text: 'Contact',
+        href: `/#contacto`,
+        text: 'Contacto',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>`,
       },
     ],
   },
