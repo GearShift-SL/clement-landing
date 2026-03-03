@@ -1,6 +1,5 @@
 ---
 import PageLayout from '~/layouts/PageLayout.astro';
-import { Icon } from 'astro-icon/components';
 import type { CollectionEntry } from 'astro:content';
 
 // Data from the markdown frontmater
@@ -66,7 +65,29 @@ const formatDate = (date: Date) => {
         pubDatetime && (
           <div class="flex flex-wrap gap-4 mt-3 text-sm text-gray-600 mb-8">
             <div class="flex items-center">
-              <Icon name="tabler:calendar" class="w-5 h-5 mr-1" />
+              <svg
+                class="w-5 h-5 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-calendar"
+              >
+                <>
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" />
+                  <path d="M16 3v4" />
+                  <path d="M8 3v4" />
+                  <path d="M4 11h16" />
+                  <path d="M11 15h1" />
+                  <path d="M12 15v3" />
+                </>
+              </svg>
               <span>{modDatetime ? formatDate(modDatetime) : formatDate(pubDatetime)}</span>
             </div>
           </div>
