@@ -1,0 +1,160 @@
+---
+import imgAboutOrigen from '~/assets/images/landing/about-origen.jpg';
+import imgAboutIdentidad from '~/assets/images/landing/about-identidad.jpg';
+import imgAboutFuturo from '~/assets/images/landing/about-futuro.jpg';
+import imgAboutExito from '~/assets/images/landing/about-exito.jpg';
+---
+
+<section id="sobre-nosotros" class="py-32 bg-gradient-to-b from-white via-slate-50 to-white scroll-reveal">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20 scroll-reveal-item">
+      <div class="inline-block mb-6">
+        <div class="h-px w-12 bg-slate-800 inline-block"></div>
+        <span class="mx-4 text-slate-800 uppercase tracking-[0.3em] text-xs font-light">Nuestra Historia</span>
+        <div class="h-px w-12 bg-slate-800 inline-block"></div>
+      </div>
+      <h2 class="text-5xl md:text-6xl font-serif font-bold text-slate-900 mb-8">Quiénes Somos</h2>
+      <p class="text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed font-light">
+        Con más de 45 años de historia, <span class="font-serif font-semibold text-brand-700">CLEMENT</span> es una de las
+        promotoras con mayor solvencia de Madrid. Nuestra seña de identidad es la <span
+          class="font-serif font-semibold text-brand-700">CALIDAD</span
+        > con las que realizamos nuestras promociones, pues contamos con nuestra propia constructora que nos permite cuidar
+        hasta el último detalle de las viviendas que promovemos.
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      <!-- Origen -->
+      <div class="group scroll-reveal-item">
+        <div
+          class="grid lg:grid-cols-2 gap-0 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
+        >
+          <div class="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+            <img
+              src={imgAboutOrigen.src}
+              alt="Origen de Clement"
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/10"></div>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-8 lg:hidden">
+              <h3 class="text-3xl font-serif font-bold text-white">Origen</h3>
+            </div>
+          </div>
+          <div class="relative p-10 md:p-14 flex flex-col justify-center">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full -mr-32 -mt-32 opacity-50"></div>
+            <div class="relative">
+              <div class="h-px w-16 bg-brand-600 mb-4"></div>
+              <h3 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6 hidden lg:block">Origen</h3>
+              <p class="text-slate-700 leading-relaxed text-lg font-light mb-5">
+                CLEMENT nació en la Villa de Barajas (Madrid) mediante documento privado de Estatutos Sociales como
+                una entidad familiar que en 1972 se constituye mediante Escritura Pública como Sociedad Limitada y
+                cuyo objeto social es la compraventa y/o construcción de solares, pisos, locales comerciales y
+                edificios, así como cualquier otro lícito comercio relacionado con lo anterior.
+              </p>
+              <p class="text-slate-700 leading-relaxed text-lg font-light">
+                CLEMENT fue expandiéndose hasta convertirse en Sociedad Anónima en virtud de escritura otorgada en
+                Madrid en 1982, ya con una importante cifra de negocio y con un asentamiento de reconocido prestigio
+                en el mercado, llegando a pasar, a comienzos del año 2003, a ser considerada Gran Empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Identidad -->
+      <div class="group scroll-reveal-item">
+        <div
+          class="grid lg:grid-cols-2 gap-0 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
+        >
+          <div class="relative p-10 md:p-14 flex flex-col justify-center order-2 lg:order-1">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-slate-900/5 rounded-full -ml-32 -mt-32"></div>
+            <div class="relative">
+              <div class="h-px w-16 bg-brand-600 mb-4"></div>
+              <h3 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6 hidden lg:block">Identidad</h3>
+              <p class="text-slate-700 leading-relaxed text-lg font-light">
+                En la actualidad CLEMENT no es ya sólo una entidad, sino un gran grupo de empresas dedicado
+                principalmente a la Promoción y Construcción de Viviendas en general, aunque avanzamos hacia nuevos
+                mercados mediante nuevos planes de diversificación geográfica y estratégica, fruto de las cuáles han
+                nacido nuevas líneas de negocio, como nuestra nueva cadena hotelera CLEMENT HOTELES que cuenta con dos
+                hoteles de 4 estrellas así como los esfuerzos realizados para que la Administración nos haya concedido
+                la Clasificación de CLEMENT en distintos grupos y subgrupos para realizar obras contratadas por este
+                Organismo Público y sobre todo para realizar las obras de urbanización de los ámbitos donde se
+                construyen nuestras promociones de viviendas.
+              </p>
+            </div>
+          </div>
+          <div class="relative aspect-[4/3] lg:aspect-auto overflow-hidden order-1 lg:order-2">
+            <img
+              src={imgAboutIdentidad.src}
+              alt="Identidad de Clement"
+              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/10"></div>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-8 lg:hidden">
+              <h3 class="text-3xl font-serif font-bold text-white">Identidad</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Futuro & Éxito -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="group scroll-reveal-item">
+          <div
+            class="bg-white shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
+          >
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img
+                src={imgAboutFuturo.src}
+                alt="Futuro de Clement"
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            </div>
+            <div class="relative p-10 flex-1 flex flex-col justify-center">
+              <div class="absolute bottom-0 right-0 w-48 h-48 bg-brand-50 rounded-full -mr-24 -mb-24 opacity-60">
+              </div>
+              <div class="relative">
+                <div class="h-px w-12 bg-brand-600 mb-4"></div>
+                <h3 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-4">Futuro</h3>
+                <p class="text-slate-700 leading-relaxed text-lg font-light">
+                  Nuestro departamento de expansión trabaja día a día en busca de nuevos terrenos para realizar los
+                  sueños de muchas familias, incluyendo en nuestras promociones materiales de excelente CALIDAD y
+                  dotándolas de las tecnologías más avanzadas acorde a una demanda real de nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group scroll-reveal-item">
+          <div
+            class="bg-white shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
+          >
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img
+                src={imgAboutExito.src}
+                alt="Éxito de Clement"
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            </div>
+            <div class="relative p-10 flex-1 flex flex-col justify-center">
+              <div class="absolute bottom-0 left-0 w-48 h-48 bg-slate-900/5 rounded-full -ml-24 -mb-24"></div>
+              <div class="relative">
+                <div class="h-px w-12 bg-brand-600 mb-4"></div>
+                <h3 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-4">Éxito</h3>
+                <p class="text-slate-700 leading-relaxed text-lg font-light">
+                  Dos de las claves del éxito de CLEMENT son, por un lado, el continuo deseo de mejora y crecimiento
+                  de nuestra marca basada en la CALIDAD, y por otro lado, la fortaleza financiera de nuestro grupo,
+                  basada en la no repartición de dividendos a sus accionistas, o lo que es lo mismo, reinvirtiendo el
+                  100% de los beneficios obtenidos a lo largo de los años en nuestras propias entidades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,115 @@
+---
+---
+
+<section
+  id="stats"
+  class="relative py-32 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 scroll-reveal overflow-hidden"
+>
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-brand-500 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-500 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid md:grid-cols-3 gap-8 mb-20">
+      <div
+        class="text-center p-10 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-brand-500/20 hover:border-brand-500/40 transition-all duration-500 hover:-translate-y-2 scroll-reveal-item group"
+      >
+        <div class="relative">
+          <div
+            class="text-6xl md:text-7xl font-serif font-bold bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-300 stat-counter"
+            data-target="44"
+          >
+            0
+          </div>
+          <div class="h-px w-16 bg-gradient-to-r from-transparent via-brand-500 to-transparent mx-auto mb-4"></div>
+          <div class="text-brand-100/80 uppercase tracking-[0.3em] text-xs font-light">Promociones de viviendas</div>
+        </div>
+      </div>
+      <div
+        class="text-center p-10 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-brand-500/20 hover:border-brand-500/40 transition-all duration-500 hover:-translate-y-2 scroll-reveal-item group"
+      >
+        <div class="relative">
+          <div
+            class="text-6xl md:text-7xl font-serif font-bold bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-300 stat-counter"
+            data-target="1616"
+            data-separator=","
+          >
+            0
+          </div>
+          <div class="h-px w-16 bg-gradient-to-r from-transparent via-brand-500 to-transparent mx-auto mb-4"></div>
+          <div class="text-brand-100/80 uppercase tracking-[0.3em] text-xs font-light">Viviendas entregadas</div>
+        </div>
+      </div>
+      <div
+        class="text-center p-10 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-brand-500/20 hover:border-brand-500/40 transition-all duration-500 hover:-translate-y-2 scroll-reveal-item group"
+      >
+        <div class="relative">
+          <div
+            class="text-6xl md:text-7xl font-serif font-bold bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-300 stat-counter"
+            data-target="54"
+          >
+            0
+          </div>
+          <div class="h-px w-16 bg-gradient-to-r from-transparent via-brand-500 to-transparent mx-auto mb-4"></div>
+          <div class="text-brand-100/80 uppercase tracking-[0.3em] text-xs font-light">Años de experiencia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center max-w-4xl mx-auto scroll-reveal-item">
+      <p class="text-lg md:text-xl text-slate-100 leading-relaxed font-light">
+        Con más de 50 años de historia, <span class="font-serif font-semibold text-brand-400">CLEMENT</span> es una de las
+        promotoras con mayor proyección de Madrid. Nuestra seña de identidad es la <span
+          class="font-serif font-semibold text-brand-400">CALIDAD</span
+        > con las que realizamos nuestras promociones, pues contamos con nuestra propia constructora que nos permite cuidar
+        hasta el último detalle de las viviendas que promovemos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function animateCounter(el: HTMLElement) {
+    const target = parseInt(el.dataset.target || '0', 10);
+    const separator = el.dataset.separator || '';
+    const duration = 2000;
+    const startTime = performance.now();
+
+    function easeOutQuart(t: number) {
+      return 1 - Math.pow(1 - t, 4);
+    }
+
+    function formatNumber(n: number) {
+      if (!separator) return String(n);
+      return n.toLocaleString('en-US').replace(/,/g, separator);
+    }
+
+    function step(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = Math.round(easeOutQuart(progress) * target);
+      el.textContent = formatNumber(current);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target as HTMLElement);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll('.stat-counter').forEach((el) => {
+    counterObserver.observe(el);
+  });
+</script>

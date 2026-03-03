@@ -1,13 +1,25 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 @theme {
   /* Replace the tailwind sans font with Inter Variable */
-  --font-sans: "Inter Variable", sans-serif;
+  --font-sans: 'Inter Variable', sans-serif;
 
-  /* Custom colors */
-  --color-primary: #f57c21;
-  --color-secondary: #fba818;
+  /* Brand color scale — deep crimson #ad2624 */
+  --color-brand-50: #fdf2f2;
+  --color-brand-100: #fce8e8;
+  --color-brand-200: #f8d0d0;
+  --color-brand-300: #f2a9a8;
+  --color-brand-400: #e97170;
+  --color-brand-500: #d94140;
+  --color-brand-600: #ad2624;  /* Primary brand color */
+  --color-brand-700: #8b1e1c;
+  --color-brand-800: #6b1615;
+  --color-brand-900: #4a0f0e;
+
+  /* Semantic colors */
+  --color-primary: #ad2624;
+  --color-secondary: #8b1e1c;
   --color-default: rgb(16 16 16);
   --color-muted: rgb(16 16 16 / 66%);
   --color-page: rgb(255 255 255);
@@ -15,9 +27,9 @@
 
 .dark {
   /* Custom colors */
-  --color-primary: #ca6be6;
-  --color-secondary: #645bc9;
-  --color-accent: #ca6be6;
+  --color-primary: #ad2624;
+  --color-secondary: #8b1e1c;
+  --color-accent: #e97170;
   --color-default: rgb(229 236 246);
   --color-muted: rgb(229 236 246 / 66%);
 }
