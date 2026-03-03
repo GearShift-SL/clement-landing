@@ -82,53 +82,34 @@ export const NAVIGATION = (): NavigationConfig => ({
   footer: {
     links: [
       {
-        title: 'Support',
+        title: 'Clement',
         links: [
-          { text: 'Contact', href: `/contact/` },
-          { text: 'Blog', href: `/blog/` },
-          { text: 'Guides', href: `/blog/guides/` },
+          { text: 'Contacto', href: `/#contacto` },
+          { text: 'Sobre nosotros', href: `/#sobre-nosotros` },
+          { text: 'Promociones', href: `/#promociones` },
         ],
       },
       {
-        title: 'MyWebsite',
+        title: 'Promociones',
         links: [
-          { text: 'How it works', href: `/#features` },
-          { text: 'About us', href: `/#about` },
-        ],
-      },
-      {
-        title: 'GearShift Universe',
-        links: [
-          { text: 'GearShift', href: 'https://gearshift.es/' },
-          { text: 'postify AI', href: 'https://postifyai.com/' },
-          { text: 'Estavia', href: 'https://estavia.ai/' },
-          { text: 'AutoIPC', href: 'https://autoipc.es/' },
-          { text: 'SynCal', href: 'https://syncal.app/' },
+          { text: 'Alameda de Osuna I', href: '/promociones/alameda-de-osuna-i' },
+          { text: 'Alameda de Osuna II', href: '/promociones/alameda-de-osuna-ii' },
+          { text: 'Alameda de Osuna III', href: '/promociones/alameda-de-osuna-iii' },
+          { text: 'Alameda de Osuna IV', href: '/promociones/alameda-de-osuna-iv' },
+          { text: 'Alameda de Osuna V', href: '/promociones/alameda-de-osuna-v' },
+          { text: 'Puerta de Hierro', href: 'https://clementpuertadehierro.com/' },
         ],
       },
     ],
     secondaryLinks: [
-      { text: 'Terms and conditions', href: `/terms/` },
-      { text: 'Privacy policy', href: `/privacy/` },
+      { text: 'Términos y condiciones', href: `/terms/` },
+      { text: 'Política de privacidad', href: `/privacy/` },
     ],
-    socialLinks: [
-      {
-        ariaLabel: 'X',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>`,
-        href: 'https://x.com/mywebsite',
-      },
-      // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/mywebsite' },
-      // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/mywebsite' },
-      {
-        ariaLabel: 'RSS',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>`,
-        href: `/rss.xml`,
-      },
-    ],
+    socialLinks: [],
     contactDetails: {
-      address: 'Calle Santa Leonor, 64, Edifio D, Madrid',
+      address: 'Santibáñez de Bejar, 6, Madrid',
       addressLink: 'https://maps.app.goo.gl/tb4McHigby4r5BeP7',
-      email: 'hello@clement.es',
+      email: 'info@clement.es',
     },
     footNote: `
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
