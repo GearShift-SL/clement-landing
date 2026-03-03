@@ -1,8 +1,8 @@
-# robots.txt for https://mywebsite.com
+# robots.txt for https://clement.es
 
 User-agent: *
 Disallow: /cdn-cgi/
 Allow: /
 
 # Sitemaps
-Sitemap: https://mywebsite.com/sitemap-index.xml 
+Sitemap: https://clement.es/sitemap-index.xml 

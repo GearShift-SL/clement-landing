@@ -1,6 +1,6 @@
 ---
-title: "Terms & conditions"
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Terms & conditions'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 _Last update_: July 30, 2025
@@ -151,4 +151,4 @@ We may update these Terms of Service in the future. Whenever we make a significa
 
 If you have any questions about these Terms and Conditions, you can contact us
 
-- By email: hello@MyWebsite.com
+- By email: hello@clement.es
