@@ -730,7 +730,9 @@ const viviendaItems = [
       <div class="hero-fade inline-block mb-4" style="animation-delay: 0.1s">
         <span class="text-white/60 uppercase tracking-[0.3em] text-xs font-light">Entregado · Madrid</span>
       </div>
-      <h1 class="hero-fade text-5xl md:text-7xl font-serif font-bold text-white mb-4" style="animation-delay: 0.2s">Alameda de Osuna IV</h1>
+      <h1 class="hero-fade text-5xl md:text-7xl font-serif font-bold text-white mb-4" style="animation-delay: 0.2s">
+        Alameda de Osuna IV
+      </h1>
       <p class="hero-fade text-white/80 text-lg font-light max-w-2xl" style="animation-delay: 0.3s">
         43 viviendas de 2, 3 y 4 dormitorios en urbanización privada con todos los servicios
       </p>
@@ -754,7 +756,7 @@ const viviendaItems = [
             con terraza, trastero y hasta dos plazas de garaje, en urbanización privada con conserjería, jardines,
             piscina, pista de pádel y sala polivalente.
           </p>
-          <p class="text-slate-600 leading-relaxed font-light">
+          <p class="text-slate-600 leading-relaxed font-light text-lg">
             La promoción se distribuye en cuatro portales con cuatro plantas más ático en cada uno de ellos, ofreciendo
             amplias superficies y acabados de primera calidad en uno de los entornos residenciales más consolidados de
             Madrid.
@@ -790,7 +792,9 @@ const viviendaItems = [
         <div class="absolute inset-0 bg-linear-to-r from-slate-900/65 to-slate-900/10" />
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Interiores</span>
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Interiores
+            </span>
             <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
               Espacios amplios con luz natural
             </p>
@@ -884,7 +888,9 @@ const viviendaItems = [
 
       <!-- Urbanización -->
       <div class="mb-12">
-        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Urbanización</h3>
+        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">
+          Urbanización
+        </h3>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {
             urbanizacionItems.map((item) => (
@@ -928,7 +934,9 @@ const viviendaItems = [
 
       <!-- Vivienda -->
       <div>
-        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Vivienda</h3>
+        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">
+          Vivienda
+        </h3>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {
             viviendaItems.map((item) => (
@@ -1111,7 +1119,9 @@ const viviendaItems = [
         <div class="absolute inset-0 bg-linear-to-r from-slate-900/60 to-slate-900/10" />
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Dormitorios</span>
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Dormitorios
+            </span>
             <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
               Personalización a medida
             </p>
@@ -1214,7 +1224,7 @@ const viviendaItems = [
       <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">¿Le interesa una promoción similar?</h2>
       <p class="text-white/80 font-light text-lg mb-10 leading-relaxed">
         Consulte nuestras promociones activas o póngase en contacto con nosotros para obtener más información sobre
-        nuestros desarrollos en Madrid.
+        nuestras promociones en Madrid.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
@@ -1272,14 +1282,17 @@ const viviendaItems = [
     itemObserver.observe(el);
   });
 
-  const imgObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        imgObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px' });
+  const imgObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          imgObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px' }
+  );
 
   document.querySelectorAll('.scroll-reveal-img').forEach((el) => {
     imgObserver.observe(el);
