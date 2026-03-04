@@ -706,7 +706,7 @@ const viviendaItems = [
   }}
 >
   <!-- ═══════════════════════════════════════════════════════ HERO ══ -->
-  <section class="relative h-[70vh] min-h-[480px] overflow-hidden">
+  <section class="relative h-screen overflow-hidden">
     {
       heroRender && (
         <img
@@ -717,7 +717,7 @@ const viviendaItems = [
       )
     }
     <div class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-slate-900/30 to-slate-900/20"></div>
-    <div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
       <a
         href="/#promociones"
         class="hero-fade inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-light mb-6 transition-colors w-fit"
@@ -736,6 +736,12 @@ const viviendaItems = [
       <p class="hero-fade text-white/80 text-lg font-light max-w-2xl" style="animation-delay: 0.3s">
         43 viviendas de 2, 3 y 4 dormitorios en urbanización privada con todos los servicios
       </p>
+    </div>
+    <div class="hero-fade absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/60" style="animation-delay: 0.5s">
+      <span class="text-xs tracking-[0.25em] uppercase mb-3">Descubre</span>
+      <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"></path>
+      </svg>
     </div>
   </section>
 
