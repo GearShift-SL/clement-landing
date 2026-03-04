@@ -720,18 +720,18 @@ const viviendaItems = [
     <div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
       <a
         href="/#promociones"
-        class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-light mb-6 transition-colors w-fit"
+        class="hero-fade inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-light mb-6 transition-colors w-fit"
       >
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
         </svg>
         Volver a promociones
       </a>
-      <div class="inline-block mb-4">
+      <div class="hero-fade inline-block mb-4" style="animation-delay: 0.1s">
         <span class="text-white/60 uppercase tracking-[0.3em] text-xs font-light">Entregado · Madrid</span>
       </div>
-      <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-4">Alameda de Osuna IV</h1>
-      <p class="text-white/80 text-lg font-light max-w-2xl">
+      <h1 class="hero-fade text-5xl md:text-7xl font-serif font-bold text-white mb-4" style="animation-delay: 0.2s">Alameda de Osuna IV</h1>
+      <p class="hero-fade text-white/80 text-lg font-light max-w-2xl" style="animation-delay: 0.3s">
         43 viviendas de 2, 3 y 4 dormitorios en urbanización privada con todos los servicios
       </p>
     </div>
@@ -741,7 +741,7 @@ const viviendaItems = [
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
+        <div class="scroll-reveal">
           <div class="inline-block mb-6">
             <div class="h-px w-12 bg-brand-600 inline-block"></div>
             <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">La Promoción</span>
@@ -761,19 +761,19 @@ const viviendaItems = [
           </p>
         </div>
         <div class="grid grid-cols-2 gap-4">
-          <div class="bg-slate-50 p-8 border border-slate-100 text-center">
+          <div class="scroll-reveal-item bg-slate-50 p-8 border border-slate-100 text-center">
             <div class="text-4xl font-serif font-bold text-slate-900 mb-2">43</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider font-light">Viviendas</div>
           </div>
-          <div class="bg-slate-50 p-8 border border-slate-100 text-center">
+          <div class="scroll-reveal-item bg-slate-50 p-8 border border-slate-100 text-center">
             <div class="text-4xl font-serif font-bold text-slate-900 mb-2">4</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider font-light">Portales</div>
           </div>
-          <div class="bg-slate-50 p-8 border border-slate-100 text-center">
+          <div class="scroll-reveal-item bg-slate-50 p-8 border border-slate-100 text-center">
             <div class="text-4xl font-serif font-bold text-slate-900 mb-2">2–4</div>
             <div class="text-slate-500 text-sm uppercase tracking-wider font-light">Dormitorios</div>
           </div>
-          <div class="bg-brand-600 p-8 text-center">
+          <div class="scroll-reveal-item bg-brand-600 p-8 text-center">
             <div class="text-4xl font-serif font-bold text-white mb-2">100%</div>
             <div class="text-white/80 text-sm uppercase tracking-wider font-light">Vendido</div>
           </div>
@@ -785,13 +785,13 @@ const viviendaItems = [
   <!-- ════════════════════════════ RENDER: salón-comedor (separator) ══ -->
   {
     salonRender && (
-      <div class="relative h-[52vh] overflow-hidden">
+      <div class="scroll-reveal-img relative h-[52vh] overflow-hidden">
         <img src={salonRender} alt="Salón comedor — Alameda de Osuna IV" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-linear-to-r from-slate-900/65 to-slate-900/10" />
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Interiores</span>
-            <p class="text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Interiores</span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
               Espacios amplios con luz natural
             </p>
           </div>
@@ -803,7 +803,7 @@ const viviendaItems = [
   <!-- ══════════════════════════════════════════════ UBICACIÓN ══ -->
   <section class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="scroll-reveal text-center mb-16">
         <div class="inline-block mb-4">
           <div class="h-px w-12 bg-slate-600 inline-block"></div>
           <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">Ubicación</span>
@@ -817,7 +817,7 @@ const viviendaItems = [
         </p>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-8 border border-slate-200">
+        <div class="scroll-reveal-item bg-white p-8 border border-slate-200">
           <div class="w-10 h-10 bg-brand-50 flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -833,7 +833,7 @@ const viviendaItems = [
             Metro Línea 5 (Alameda de Osuna) · Autobuses 105, 112, 115, 151 y N4
           </p>
         </div>
-        <div class="bg-white p-8 border border-slate-200">
+        <div class="scroll-reveal-item bg-white p-8 border border-slate-200">
           <div class="w-10 h-10 bg-brand-50 flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -849,7 +849,7 @@ const viviendaItems = [
             A-2 · M-22 · M-40 · M-11 · A 15 minutos del centro de Madrid
           </p>
         </div>
-        <div class="bg-white p-8 border border-slate-200">
+        <div class="scroll-reveal-item bg-white p-8 border border-slate-200">
           <div class="w-10 h-10 bg-brand-50 flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -873,7 +873,7 @@ const viviendaItems = [
   <!-- ═══════════════════════════════════════ EQUIPAMIENTOS ══ -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="scroll-reveal text-center mb-16">
         <div class="inline-block mb-4">
           <div class="h-px w-12 bg-slate-600 inline-block"></div>
           <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">Calidades</span>
@@ -884,11 +884,11 @@ const viviendaItems = [
 
       <!-- Urbanización -->
       <div class="mb-12">
-        <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Urbanización</h3>
+        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Urbanización</h3>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {
             urbanizacionItems.map((item) => (
-              <div class="bg-slate-50 border border-slate-100 p-5 flex flex-col gap-3 hover:border-slate-200 hover:shadow-sm transition-all duration-200">
+              <div class="scroll-reveal-item bg-slate-50 border border-slate-100 p-5 flex flex-col gap-3 hover:border-slate-200 hover:shadow-sm transition-all duration-200">
                 <div class="w-9 h-9 bg-brand-50 flex items-center justify-center text-brand-600 shrink-0">
                   <Fragment set:html={item.icon} />
                 </div>
@@ -905,7 +905,7 @@ const viviendaItems = [
       <!-- RENDER: dormitorio principal — full-width separator within section -->
       {
         dormPpalRender && (
-          <div class="relative h-[45vh] overflow-hidden my-12">
+          <div class="scroll-reveal-img relative h-[45vh] overflow-hidden my-12">
             <img
               src={dormPpalRender}
               alt="Dormitorio principal — Alameda de Osuna IV"
@@ -914,10 +914,10 @@ const viviendaItems = [
             <div class="absolute inset-0 bg-linear-to-l from-slate-900/60 to-slate-900/10" />
             <div class="absolute inset-0 flex items-center justify-end">
               <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-right">
-                <span class="text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+                <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
                   Dormitorio principal
                 </span>
-                <p class="text-white text-3xl md:text-4xl font-serif font-bold max-w-sm ml-auto leading-snug">
+                <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-bold max-w-sm ml-auto leading-snug">
                   Descanso y confort en cada detalle
                 </p>
               </div>
@@ -928,11 +928,11 @@ const viviendaItems = [
 
       <!-- Vivienda -->
       <div>
-        <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Vivienda</h3>
+        <h3 class="scroll-reveal text-xs uppercase tracking-[0.25em] text-slate-400 font-medium mb-6 text-center">Vivienda</h3>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {
             viviendaItems.map((item) => (
-              <div class="bg-slate-50 border border-slate-100 p-5 flex flex-col gap-3 hover:border-slate-200 hover:shadow-sm transition-all duration-200">
+              <div class="scroll-reveal-item bg-slate-50 border border-slate-100 p-5 flex flex-col gap-3 hover:border-slate-200 hover:shadow-sm transition-all duration-200">
                 <div class="w-9 h-9 bg-slate-100 flex items-center justify-center text-slate-700 shrink-0">
                   <Fragment set:html={item.icon} />
                 </div>
@@ -951,7 +951,7 @@ const viviendaItems = [
   <!-- ══════════════════════════ RENDER: comedor (separator) ══ -->
   {
     comedorRender && (
-      <div class="relative h-[48vh] overflow-hidden">
+      <div class="scroll-reveal-img relative h-[48vh] overflow-hidden">
         <img src={comedorRender} alt="Comedor — Alameda de Osuna IV" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-slate-900/30" />
       </div>
@@ -961,7 +961,7 @@ const viviendaItems = [
   <!-- ═════════════════════════════════════════════ DOCUMENTOS ══ -->
   <section class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="scroll-reveal text-center mb-16">
         <div class="inline-block mb-4">
           <div class="h-px w-12 bg-slate-600 inline-block"></div>
           <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">Documentación</span>
@@ -976,7 +976,7 @@ const viviendaItems = [
               href={dossierUrl}
               target="_blank"
               rel="noopener noreferrer"
-              class="group flex flex-col gap-4 p-8 border border-slate-200 hover:border-brand-600/50 bg-white hover:bg-white transition-all duration-300"
+              class="scroll-reveal-item group flex flex-col gap-4 p-8 border border-slate-200 hover:border-brand-600/50 bg-white hover:bg-white transition-all duration-300"
             >
               <div class="w-12 h-12 bg-brand-600 flex items-center justify-center group-hover:bg-brand-700 transition-colors">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1013,7 +1013,7 @@ const viviendaItems = [
               href={memoriaUrl}
               target="_blank"
               rel="noopener noreferrer"
-              class="group flex flex-col gap-4 p-8 border border-slate-200 hover:border-brand-600/50 bg-white hover:bg-white transition-all duration-300"
+              class="scroll-reveal-item group flex flex-col gap-4 p-8 border border-slate-200 hover:border-brand-600/50 bg-white hover:bg-white transition-all duration-300"
             >
               <div class="w-12 h-12 bg-slate-700 flex items-center justify-center group-hover:bg-slate-800 transition-colors">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1053,7 +1053,7 @@ const viviendaItems = [
     avances.length > 0 && (
       <section class="py-24 bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
+          <div class="scroll-reveal text-center mb-16">
             <div class="inline-block mb-4">
               <div class="h-px w-12 bg-slate-500 inline-block" />
               <span class="mx-4 text-slate-400 uppercase tracking-[0.3em] text-xs font-light">Seguimiento</span>
@@ -1070,7 +1070,7 @@ const viviendaItems = [
                 href={avance.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="group flex flex-col gap-4 p-6 border border-slate-700 hover:border-slate-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300"
+                class="scroll-reveal-item group flex flex-col gap-4 p-6 border border-slate-700 hover:border-slate-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300"
               >
                 <div class="flex items-center justify-between">
                   <span class="text-slate-500 text-xs font-light uppercase tracking-wider">
@@ -1106,13 +1106,13 @@ const viviendaItems = [
   <!-- ══════════════════ RENDER: dormitorio secundario (separator) ══ -->
   {
     dormSecRender && (
-      <div class="relative h-[45vh] overflow-hidden">
+      <div class="scroll-reveal-img relative h-[45vh] overflow-hidden">
         <img src={dormSecRender} alt="Dormitorio secundario — Alameda de Osuna IV" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-linear-to-r from-slate-900/60 to-slate-900/10" />
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Dormitorios</span>
-            <p class="text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">Dormitorios</span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-bold max-w-sm leading-snug">
               Personalización a medida
             </p>
           </div>
@@ -1124,7 +1124,7 @@ const viviendaItems = [
   <!-- ══════════════════════════════════════ DISPONIBILIDAD ══ -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="scroll-reveal text-center mb-16">
         <div class="inline-block mb-4">
           <div class="h-px w-12 bg-slate-600 inline-block"></div>
           <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">Viviendas</span>
@@ -1137,7 +1137,7 @@ const viviendaItems = [
         </p>
       </div>
 
-      <div class="overflow-x-auto">
+      <div class="scroll-reveal overflow-x-auto">
         <table class="w-full text-sm border-collapse">
           <thead>
             <tr class="bg-slate-900 text-white">
@@ -1210,7 +1210,7 @@ const viviendaItems = [
 
   <!-- ══════════════════════════════════════════════════ CTA ══ -->
   <section class="py-24 bg-brand-600">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="scroll-reveal max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">¿Le interesa una promoción similar?</h2>
       <p class="text-white/80 font-light text-lg mb-10 leading-relaxed">
         Consulte nuestras promociones activas o póngase en contacto con nosotros para obtener más información sobre
@@ -1235,3 +1235,122 @@ const viviendaItems = [
 
   <ContactoSection />
 </PageLayout>
+
+<script>
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -80px 0px',
+  };
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.scroll-reveal').forEach((el) => {
+    revealObserver.observe(el);
+  });
+
+  const itemObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const siblings = entry.target.parentElement?.querySelectorAll('.scroll-reveal-item');
+        const idx = siblings ? Array.from(siblings).indexOf(entry.target as Element) : 0;
+        setTimeout(() => {
+          entry.target.classList.add('is-visible');
+        }, idx * 80);
+        itemObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.scroll-reveal-item').forEach((el) => {
+    itemObserver.observe(el);
+  });
+
+  const imgObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        imgObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px' });
+
+  document.querySelectorAll('.scroll-reveal-img').forEach((el) => {
+    imgObserver.observe(el);
+  });
+</script>
+
+<style>
+  @keyframes heroFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade {
+    opacity: 0;
+    animation: heroFadeIn 0.9s ease-out forwards;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+      opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-reveal-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-reveal-img {
+    opacity: 0;
+    transform: scale(1.04);
+    transition:
+      opacity 1s ease-out,
+      transform 1.2s ease-out;
+  }
+
+  .scroll-reveal-img.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-fade,
+    .scroll-reveal,
+    .scroll-reveal-item,
+    .scroll-reveal-img {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
