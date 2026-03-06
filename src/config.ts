@@ -14,6 +14,7 @@ type SiteConfig = {
 type Link = {
   text: string;
   href: string;
+  target?: string;
 };
 
 type Action = {
@@ -92,12 +93,12 @@ export const NAVIGATION = (): NavigationConfig => ({
       {
         title: 'Promociones',
         links: [
-          { text: 'Alameda de Osuna I', href: '/promociones/alameda-de-osuna-i' },
-          { text: 'Alameda de Osuna II', href: '/promociones/alameda-de-osuna-ii' },
-          { text: 'Alameda de Osuna III', href: '/promociones/alameda-de-osuna-iii' },
-          { text: 'Alameda de Osuna IV', href: '/promociones/alameda-de-osuna-iv' },
-          { text: 'Alameda de Osuna V', href: '/promociones/alameda-de-osuna-v' },
-          { text: 'Puerta de Hierro', href: 'https://clementpuertadehierro.com/' },
+          { text: 'Alameda de Osuna I', href: '/promociones/alameda-de-osuna-i/' },
+          { text: 'Alameda de Osuna II', href: '/promociones/alameda-de-osuna-ii/' },
+          { text: 'Alameda de Osuna III', href: '/promociones/alameda-de-osuna-iii/' },
+          { text: 'Alameda de Osuna IV', href: '/promociones/alameda-de-osuna-iv/' },
+          { text: 'Alameda de Osuna V', href: '/promociones/alameda-de-osuna-v/' },
+          { text: 'Puerta de Hierro', href: 'https://clementpuertadehierro.com/', target: '_blank' },
         ],
       },
     ],
