@@ -2,6 +2,15 @@
 import PageLayout from '~/layouts/PageLayout.astro';
 import ContactoSection from '~/components/landing/ContactoSection.astro';
 
+// Renders
+const renderModules = import.meta.glob('../../../content/promociones/alameda-de-osuna-v/renders/**', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
+const renderUrls = Object.values(renderModules) as string[];
+const salonRender = renderUrls[0];
+
 const urbanizacionItems = [
   {
     title: 'Piscina',
@@ -45,14 +54,8 @@ const urbanizacionItems = [
 >
   <!-- ═══════════════════════════════════════════════════════ HERO ══ -->
   <section class="relative h-screen overflow-hidden bg-slate-900">
-    <div class="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-    <div class="absolute inset-0 opacity-5">
-      <div
-        class="absolute inset-0"
-        style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px);"
-      >
-      </div>
-    </div>
+    <img src={salonRender} alt="Salón — Alameda de Osuna V" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-slate-900/60"></div>
     <div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
       <a
         href="/#promociones"
