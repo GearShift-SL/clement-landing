@@ -54,8 +54,9 @@ type NavigationConfig = {
 
 export const SITE = (): SiteConfig => {
   return {
-    title: 'Clement - Tu vivienda en Madrid',
-    description: 'Tu vivienda en Madrid',
+    title: 'CLEMENT - CALIDAD - Tu vivienda de Obra Nueva en Madrid',
+    description:
+      'Con más de 50 años de experiencia, CLEMENT es una de las promotoras con mayor solvencia de Madrid. Nuestra seña de identidad es la CALIDAD con las que realizamos nuestras promociones, pues contamos con nuestra propia constructora que nos permite cuidar hasta el último detalle de las viviendas que promovemos.',
     author: 'Clement',
     siteUrl: 'https://clement.es/',
     ogImage: '/src/assets/images/og-image.jpg', // Needs to be an absolute path /src/...

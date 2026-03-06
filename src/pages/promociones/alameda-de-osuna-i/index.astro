@@ -10,7 +10,8 @@ const renderModules = import.meta.glob('../../../content/promociones/alameda-de-
   import: 'default',
 });
 const renderUrls = Object.values(renderModules) as string[];
-const heroRender = renderUrls.find((url) => url.includes('frontal')) ?? renderUrls.find((url) => url.includes('aerea')) ?? renderUrls[0];
+const heroRender =
+  renderUrls.find((url) => url.includes('frontal')) ?? renderUrls.find((url) => url.includes('aerea')) ?? renderUrls[0];
 const interiorRender = renderUrls.find((url) => url.includes('interior')) ?? renderUrls[1];
 const piscinaRender = renderUrls.find((url) => url.includes('piscina')) ?? renderUrls[2];
 const esquinaRender = renderUrls.find((url) => url.includes('esquina')) ?? renderUrls[3];
@@ -194,8 +195,8 @@ const viviendaItems = [
             Calidad en un entorno consolidado
           </h2>
           <p class="text-slate-600 leading-relaxed font-light text-lg mb-6">
-            CLEMENT Alameda de Osuna I es una promoción de 56 viviendas de 1, 2, 3 y 4 dormitorios distribuidas en
-            5 portales. Todas las viviendas disponen de terraza, trastero y plaza de garaje.
+            CLEMENT Alameda de Osuna I es una promoción de 54 viviendas de 1, 2, 3 y 4 dormitorios distribuidas en 5
+            portales. Todas las viviendas disponen de terraza, trastero y plaza de garaje.
           </p>
           <p class="text-slate-600 leading-relaxed font-light text-lg">
             La urbanización cuenta con piscina, jardines, pista de pádel, zona infantil de juegos, sala polivalente y
@@ -255,8 +256,8 @@ const viviendaItems = [
         </div>
         <h2 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">La Alameda de Osuna</h2>
         <p class="text-slate-600 font-light max-w-3xl mx-auto leading-relaxed text-lg">
-          Situada en la C/ Tomillar, 20 (28042 Madrid), un barrio consolidado, residencial y tranquilo. A 10 minutos
-          del centro de Madrid por la A-2, M-22, M-40 y M-11.
+          Situada en la C/ Tomillar, 20 (28042 Madrid), un barrio consolidado, residencial y tranquilo. A 10 minutos del
+          centro de Madrid por la A-2, M-22, M-40 y M-11.
         </p>
       </div>
       <div class="grid md:grid-cols-3 gap-6">

@@ -9,7 +9,13 @@ const renderModules = import.meta.glob('../../../content/promociones/alameda-de-
   import: 'default',
 });
 const renderUrls = Object.values(renderModules) as string[];
-const salonRender = renderUrls[0];
+const fachadaRender = renderUrls.find((url) => url.includes('fachada')) ?? renderUrls[0];
+const edificioRender = renderUrls.find((url) => url.includes('edificio'));
+const salonRender = renderUrls.find((url) => url.includes('salon'));
+const piscinaRender = renderUrls.find((url) => url.includes('piscina'));
+const cocinaRender = renderUrls.find((url) => url.toLowerCase().includes('cocina'));
+const dormPpalRender = renderUrls.find((url) => url.includes('DormitorioP') || url.includes('dormitorioP'));
+const dormSecRender = renderUrls.find((url) => url.includes('Dormitorio2') || url.includes('dormitorio2'));
 
 const urbanizacionItems = [
   {
@@ -54,7 +60,7 @@ const urbanizacionItems = [
 >
   <!-- ═══════════════════════════════════════════════════════ HERO ══ -->
   <section class="relative h-screen overflow-hidden bg-slate-900">
-    <img src={salonRender} alt="Salón — Alameda de Osuna V" class="absolute inset-0 w-full h-full object-cover" />
+    <img src={fachadaRender} alt="Fachada — Alameda de Osuna V" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute inset-0 bg-slate-900/60"></div>
     <div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
       <a
@@ -67,7 +73,7 @@ const urbanizacionItems = [
         Volver a promociones
       </a>
       <div class="hero-fade inline-block mb-4" style="animation-delay: 0.1s">
-        <span class="text-white/60 uppercase tracking-[0.3em] text-xs font-light">Entregado · Madrid</span>
+        <span class="text-white/60 uppercase tracking-[0.3em] text-xs font-light">100% vendido · Madrid</span>
       </div>
       <h1 class="hero-fade text-5xl md:text-7xl font-serif font-bold text-white mb-4" style="animation-delay: 0.2s">
         Alameda de Osuna V
@@ -97,19 +103,17 @@ const urbanizacionItems = [
             <div class="h-px w-12 bg-brand-600 inline-block"></div>
             <span class="mx-4 text-slate-500 uppercase tracking-[0.3em] text-xs font-light">La Promoción</span>
           </div>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-8">
-            Promoción 100% vendida
-          </h2>
+          <h2 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-8">Promoción 100% vendida</h2>
           <p class="text-slate-600 leading-relaxed font-light text-lg mb-6">
-            CLEMENT Alameda de Osuna V se distribuye en dos portales de cinco plantas más ático en cada uno de ellos.
-            La promoción está compuesta por 48 viviendas de 2 y 4 dormitorios con terraza, plaza de garaje, piscina y
-            zonas comunes.
+            CLEMENT Alameda de Osuna V se distribuye en dos portales de cinco plantas más ático en cada uno de ellos. La
+            promoción está compuesta por 48 viviendas de 2 y 4 dormitorios con terraza, plaza de garaje, piscina y zonas
+            comunes.
           </p>
           <div class="bg-slate-50 border border-slate-200 p-6">
             <p class="text-slate-700 font-medium mb-2">Esta promoción se encuentra totalmente comercializada.</p>
             <p class="text-slate-500 font-light text-sm">
-              Si desea recibir información sobre futuras promociones, rellene el formulario al final de esta página y
-              le avisaremos cuando haya disponibilidad.
+              Si desea recibir información sobre futuras promociones, rellene el formulario al final de esta página y le
+              avisaremos cuando haya disponibilidad.
             </p>
           </div>
         </div>
@@ -135,6 +139,24 @@ const urbanizacionItems = [
     </div>
   </section>
 
+  <!-- ════════════════════════════ RENDER: salón (separator) ══ -->
+  {
+    salonRender && (
+      <div class="scroll-reveal-img relative h-[52vh] overflow-hidden">
+        <img src={salonRender} alt="Salón — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-linear-to-r from-slate-900/65 to-slate-900/10" />
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Interiores
+            </span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-light">Salón - Comedor</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   <!-- ══════════════════════════════════════════════ UBICACIÓN ══ -->
   <section class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -146,8 +168,8 @@ const urbanizacionItems = [
         </div>
         <h2 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">La Alameda de Osuna</h2>
         <p class="text-slate-600 font-light max-w-3xl mx-auto leading-relaxed text-lg">
-          Situada en la C/ Tomillar (28042 Madrid), un barrio consolidado, residencial y tranquilo, dotado de
-          comercios de todo tipo. A 10 minutos del centro de Madrid por la A-2, M-22, M-40 y M-11.
+          Situada en la C/ Tomillar (28042 Madrid), un barrio consolidado, residencial y tranquilo, dotado de comercios
+          de todo tipo. A 10 minutos del centro de Madrid por la A-2, M-22, M-40 y M-11.
         </p>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
@@ -204,6 +226,16 @@ const urbanizacionItems = [
     </div>
   </section>
 
+  <!-- ════════════════════════════ RENDER: edificio (separator) ══ -->
+  {
+    edificioRender && (
+      <div class="scroll-reveal-img relative h-[48vh] overflow-hidden">
+        <img src={edificioRender} alt="Edificio — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-slate-900/30" />
+      </div>
+    )
+  }
+
   <!-- ═══════════════════════════════════════ EQUIPAMIENTOS ══ -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -232,6 +264,72 @@ const urbanizacionItems = [
       </div>
     </div>
   </section>
+
+  <!-- ════════════════════════════ RENDER: cocina (separator) ══ -->
+  {
+    cocinaRender && (
+      <div class="scroll-reveal-img relative h-[48vh] overflow-hidden">
+        <img src={cocinaRender} alt="Cocina — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-linear-to-r from-slate-900/60 to-slate-900/10" />
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Interiores
+            </span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-light">Cocina</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  <!-- ════════════════════════════ RENDER: dormitorio principal (separator) ══ -->
+  {
+    dormPpalRender && (
+      <div class="scroll-reveal-img relative h-[45vh] overflow-hidden">
+        <img src={dormPpalRender} alt="Dormitorio principal — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-linear-to-l from-slate-900/60 to-slate-900/10" />
+        <div class="absolute inset-0 flex items-center justify-end">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Dormitorios
+            </span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-light">Dormitorio Principal</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  <!-- ════════════════════════════ RENDER: dormitorio secundario (separator) ══ -->
+  {
+    dormSecRender && (
+      <div class="scroll-reveal-img relative h-[45vh] overflow-hidden">
+        <img src={dormSecRender} alt="Dormitorio secundario — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-linear-to-r from-slate-900/60 to-slate-900/10" />
+        <div class="absolute inset-0 flex items-center">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="scroll-reveal-item text-white/50 uppercase tracking-[0.3em] text-xs font-light block mb-3">
+              Dormitorios
+            </span>
+            <p class="scroll-reveal-item text-white text-3xl md:text-4xl font-serif font-light">
+              Dormitorio Secundario
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  <!-- ════════════════════════════ RENDER: piscina (separator) ══ -->
+  {
+    piscinaRender && (
+      <div class="scroll-reveal-img relative h-[48vh] overflow-hidden">
+        <img src={piscinaRender} alt="Piscina — Alameda de Osuna V" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-slate-900/30" />
+      </div>
+    )
+  }
 
   <!-- ══════════════════════════════════════════════════ CTA ══ -->
   <section class="py-24 bg-brand-600">
@@ -296,6 +394,22 @@ const urbanizacionItems = [
   document.querySelectorAll('.scroll-reveal-item').forEach((el) => {
     itemObserver.observe(el);
   });
+
+  const imgObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          imgObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px' }
+  );
+
+  document.querySelectorAll('.scroll-reveal-img').forEach((el) => {
+    imgObserver.observe(el);
+  });
 </script>
 
 <style>
@@ -341,10 +455,24 @@ const urbanizacionItems = [
     transform: translateY(0);
   }
 
+  .scroll-reveal-img {
+    opacity: 0;
+    transform: scale(1.04);
+    transition:
+      opacity 1.2s ease-out,
+      transform 1.2s ease-out;
+  }
+
+  .scroll-reveal-img.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .hero-fade,
     .scroll-reveal,
-    .scroll-reveal-item {
+    .scroll-reveal-item,
+    .scroll-reveal-img {
       opacity: 1 !important;
       transform: none !important;
       animation: none !important;
