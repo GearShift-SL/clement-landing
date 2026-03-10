@@ -2,6 +2,8 @@
 import PageLayout from '~/layouts/PageLayout.astro';
 import ContactoSection from '~/components/landing/ContactoSection.astro';
 import PersonalizaSection from '~/components/landing/PersonalizaSection.astro';
+import NewsletterSubscribe from '~/components/landing/NewsletterSubscribe.astro';
+import NewsletterCTA from '~/components/landing/NewsletterCTA.astro';
 
 // Render
 const renderModules = import.meta.glob('../../../content/promociones/alameda-de-osuna-iii/renders/**', {
@@ -231,6 +233,12 @@ const viviendaItems = [
             Situada en la C/ San Severo (28042 Madrid), la urbanización cuenta con piscina, jardines, pista de pádel,
             zona infantil, sala polivalente y conserjería, en un entorno residencial privilegiado.
           </p>
+          <div class="bg-slate-50 border border-slate-200 p-6 mt-6">
+            <p class="text-slate-700 font-medium mb-2">Esta promoción se encuentra totalmente comercializada.</p>
+            <p class="text-slate-500 font-light text-sm">
+              Si desea recibir información sobre futuras promociones, rellene el formulario a continuacion.
+            </p>
+          </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div class="scroll-reveal-item bg-slate-50 p-8 border border-slate-100 text-center">
@@ -250,6 +258,9 @@ const viviendaItems = [
             <div class="text-white/80 text-sm uppercase tracking-wider font-light">Vendido</div>
           </div>
         </div>
+      </div>
+      <div class="mt-12">
+        <NewsletterSubscribe />
       </div>
     </div>
   </section>
@@ -563,16 +574,17 @@ const viviendaItems = [
           Ver otras promociones
         </a>
         <a
-          href="#contacto"
+          href="#newsletter"
           class="inline-flex items-center justify-center gap-2 border border-white/40 text-white font-medium px-8 py-4 hover:border-white/70 hover:bg-white/10 transition-colors"
         >
-          Contactar con nosotros
+          Recibir información
         </a>
       </div>
     </div>
   </section>
 
   <ContactoSection />
+  <NewsletterCTA />
 </PageLayout>
 
 <script>

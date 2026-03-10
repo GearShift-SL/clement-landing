@@ -78,7 +78,11 @@
 
       <!-- Contact Form -->
       <div class="scroll-reveal-item">
-        <form id="contact-form" class="bg-white p-10 shadow-2xl border border-slate-200 h-full" style="transition: opacity 0.5s ease, transform 0.5s ease;">
+        <form
+          id="contact-form"
+          class="bg-white p-10 shadow-2xl border border-slate-200 h-full"
+          style="transition: opacity 0.5s ease, transform 0.5s ease;"
+        >
           <div class="space-y-6">
             <div>
               <label for="name" class="block text-xs font-light uppercase tracking-wider text-slate-600 mb-3"
@@ -142,7 +146,11 @@
                 class="mt-1 h-4 w-4 shrink-0 border-slate-300 text-brand-600 focus:ring-brand-600 accent-slate-800"
               />
               <label for="privacy" class="text-sm text-slate-600 font-light leading-relaxed">
-                He leído y acepto la <a href="/privacy" class="underline text-slate-900 hover:text-brand-700 transition-colors">política de privacidad</a> <span class="text-red-500">*</span>
+                He leído y acepto la <a
+                  href="/privacy"
+                  class="underline text-slate-900 hover:text-brand-700 transition-colors">política de privacidad</a
+                >
+                <span class="text-red-500">*</span>
               </label>
             </div>
 
@@ -151,16 +159,24 @@
             <button
               id="contact-submit"
               type="submit"
-              class="w-full bg-linear-to-r from-slate-900 to-slate-800 text-white font-light uppercase tracking-wider py-5 px-6 hover:from-brand-700 hover:to-brand-800 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-900 hover:border-brand-700"
+              class="w-full bg-linear-to-r hover:cursor-pointer from-slate-900 to-slate-800 text-white font-light uppercase tracking-wider py-5 px-6 hover:from-brand-700 hover:to-brand-800 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-900 hover:border-brand-700"
             >
               Enviar mensaje
             </button>
           </div>
         </form>
 
-        <div id="contact-success" class="hidden flex-col items-center justify-center bg-white p-10 shadow-2xl border border-slate-200 h-full text-center opacity-0 transition-all duration-500" style="transform: scale(0.95) translateY(10px);">
+        <div
+          id="contact-success"
+          class="hidden flex-col items-center justify-center bg-white p-10 shadow-2xl border border-slate-200 h-full text-center opacity-0 transition-all duration-500"
+          style="transform: scale(0.95) translateY(10px);"
+        >
           <svg class="w-16 h-16 text-green-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">¡Mensaje enviado!</h3>
           <p class="text-slate-600 font-light">Gracias por contactarnos. Le responderemos lo antes posible.</p>
@@ -170,68 +186,64 @@
   </div>
 </section>
 
-
 <script>
-  const form = document.getElementById("contact-form") as HTMLFormElement;
-  const submitBtn = document.getElementById("contact-submit") as HTMLButtonElement;
-  const feedback = document.getElementById("contact-feedback") as HTMLParagraphElement;
-  const successPanel = document.getElementById("contact-success") as HTMLDivElement;
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('contact-submit') as HTMLButtonElement;
+  const feedback = document.getElementById('contact-feedback') as HTMLParagraphElement;
+  const successPanel = document.getElementById('contact-success') as HTMLDivElement;
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
 
-    if (!formData.get("privacy")) {
-      feedback.textContent = "Debe aceptar la política de privacidad.";
-      feedback.className = "text-sm text-center text-red-400";
+    if (!formData.get('privacy')) {
+      feedback.textContent = 'Debe aceptar la política de privacidad.';
+      feedback.className = 'text-sm text-center text-red-400';
       return;
     }
 
     submitBtn.disabled = true;
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = "Enviando...";
-    feedback.className = "text-sm text-center hidden";
+    submitBtn.textContent = 'Enviando...';
+    feedback.className = 'text-sm text-center hidden';
 
     const payload = {
       audience: {
-        name: "clement_contacto",
-        audience_type: "contact_form",
+        name: 'clement_contacto',
+        audience_type: 'contact_form',
       },
-      email: formData.get("email"),
-      first_name: formData.get("name"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
+      email: formData.get('email'),
+      first_name: formData.get('name'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
       source: 1,
     };
 
     try {
-      const response = await fetch(
-        "https://formrelay.hlab.es/api/subscribers/",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }
-      );
+      const response = await fetch('https://formrelay.hlab.es/api/subscribers/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-      if (!response.ok) throw new Error("Error en el envío");
+      if (!response.ok) throw new Error('Error en el envío');
 
-      form.style.opacity = "0";
-      form.style.transform = "scale(0.95) translateY(-10px)";
+      form.style.opacity = '0';
+      form.style.transform = 'scale(0.95) translateY(-10px)';
 
       setTimeout(() => {
-        form.style.display = "none";
+        form.style.display = 'none';
 
-        successPanel.classList.remove("hidden");
-        successPanel.style.display = "flex";
+        successPanel.classList.remove('hidden');
+        successPanel.style.display = 'flex';
         void successPanel.offsetWidth;
-        successPanel.style.opacity = "1";
-        successPanel.style.transform = "scale(1) translateY(0)";
+        successPanel.style.opacity = '1';
+        successPanel.style.transform = 'scale(1) translateY(0)';
       }, 500);
     } catch {
-      feedback.textContent = "Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde.";
-      feedback.className = "text-sm text-center text-red-400";
+      feedback.textContent = 'Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde.';
+      feedback.className = 'text-sm text-center text-red-400';
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
     }
