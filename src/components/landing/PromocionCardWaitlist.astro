@@ -6,7 +6,7 @@ interface Props {
 const { tag } = Astro.props;
 ---
 
-<div class="flex-1 flex flex-col justify-center items-center text-center" data-tag={tag}>
+<div class="flex-1 flex flex-col justify-center items-center text-center" data-waitlist-tag={tag}>
   <p class="text-slate-500 text-xs uppercase tracking-[0.3em] font-light mb-3">Notificarme al lanzamiento</p>
   <form class="ao6-form flex gap-2 w-full">
     <input
@@ -27,8 +27,8 @@ const { tag } = Astro.props;
 </div>
 
 <script>
-  document.querySelectorAll<HTMLElement>('[data-tag]').forEach((wrapper) => {
-    const tag = wrapper.dataset.tag!;
+  document.querySelectorAll<HTMLElement>('[data-waitlist-tag]').forEach((wrapper) => {
+    const tag = wrapper.dataset.waitlistTag!;
     const form = wrapper.querySelector<HTMLFormElement>('.ao6-form')!;
     const submitBtn = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
     const feedback = wrapper.querySelector<HTMLParagraphElement>('.ao6-feedback')!;
@@ -58,7 +58,8 @@ const { tag } = Astro.props;
 
         if (!response.ok) throw new Error();
 
-        form.innerHTML = '<p class="text-sm text-green-600 font-light">¡Gracias! Le avisaremos al lanzamiento.</p>';
+        form.innerHTML =
+          '<p class="text-sm text-green-600 font-light text-center">¡Gracias! Le avisaremos cuando lancemos la promoción.</p>';
       } catch {
         feedback.textContent = 'Error al enviar. Inténtelo de nuevo.';
         feedback.className = 'ao6-feedback text-xs mt-2 text-red-500';
