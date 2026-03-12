@@ -1,0 +1,70 @@
+---
+interface Props {
+  tag: string;
+}
+
+const { tag } = Astro.props;
+---
+
+<div class="flex-1 flex flex-col justify-center items-center text-center" data-tag={tag}>
+  <p class="text-slate-500 text-xs uppercase tracking-[0.3em] font-light mb-3">Notificarme al lanzamiento</p>
+  <form class="ao6-form flex gap-2 w-full">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="tu@email.com"
+      class="flex-1 px-4 py-2 bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500 transition-all font-light text-sm"
+    />
+    <button
+      type="submit"
+      class="px-4 py-2 cursor-pointer bg-brand-600 hover:bg-brand-700 text-white text-sm font-light uppercase tracking-wider transition-all duration-300 whitespace-nowrap"
+    >
+      Avisadme
+    </button>
+  </form>
+  <p class="ao6-feedback hidden text-xs mt-2"></p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-tag]').forEach((wrapper) => {
+    const tag = wrapper.dataset.tag!;
+    const form = wrapper.querySelector<HTMLFormElement>('.ao6-form')!;
+    const submitBtn = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+    const feedback = wrapper.querySelector<HTMLParagraphElement>('.ao6-feedback')!;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = form.querySelector<HTMLInputElement>('input[name="email"]')!.value;
+
+      submitBtn.disabled = true;
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = '...';
+
+      const payload = {
+        audience: { name: 'clement_waitlist', audience_type: 'waitlist' },
+        email,
+        source: 1,
+        custom_data: { tags: [tag] },
+      };
+
+      try {
+        const response = await fetch('https://formrelay.hlab.es/api/subscribers/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) throw new Error();
+
+        form.innerHTML = '<p class="text-sm text-green-600 font-light">¡Gracias! Le avisaremos al lanzamiento.</p>';
+      } catch {
+        feedback.textContent = 'Error al enviar. Inténtelo de nuevo.';
+        feedback.className = 'ao6-feedback text-xs mt-2 text-red-500';
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText ?? 'Avisar';
+      }
+    });
+  });
+</script>

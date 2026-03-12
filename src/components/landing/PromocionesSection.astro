@@ -1,4 +1,5 @@
 ---
+import imgAlamedaOsunaVI from '~/content/promociones/alameda-de-osuna-vi/renders/Cocina_HI.JPG';
 import imgPuertaHierro from '~/assets/images/landing/promocion-puerta-hierro.webp';
 import imgAlamedaOsunaV from '~/assets/images/landing/promocion-alameda-osuna-v.jpg';
 import imgAlamedaOsunaIV from '~/assets/images/landing/promocion-alameda-osuna-iv.jpg';
@@ -6,6 +7,7 @@ import imgAlamedaOsunaIII from '~/assets/images/landing/promocion-alameda-osuna-
 import imgAlamedaOsunaII from '~/assets/images/landing/promocion-alameda-osuna-ii.jpg';
 import imgAlamedaOsunaI from '~/assets/images/landing/promocion-alameda-osuna-i.jpg';
 import NewsletterSubscribe from '~/components/landing/NewsletterSubscribe.astro';
+import PromocionCardWaitlist from '~/components/landing/PromocionCardWaitlist.astro';
 ---
 
 <section id="promociones" class="py-32 bg-linear-to-b from-slate-50 via-white to-slate-50 scroll-reveal">
@@ -25,6 +27,31 @@ import NewsletterSubscribe from '~/components/landing/NewsletterSubscribe.astro'
     <NewsletterSubscribe />
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Alameda de Osuna VI - Próximamente -->
+      <div
+        class="bg-white overflow-hidden border border-slate-200 scroll-reveal-item relative flex flex-col cursor-default select-none"
+      >
+        <div class="aspect-4/3 relative overflow-hidden">
+          <img
+            src={imgAlamedaOsunaVI.src}
+            alt="Alameda de Osuna VI"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
+          <span
+            class="absolute top-6 right-6 bg-blue-600 text-white px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/20"
+            >Próximamente</span
+          >
+        </div>
+        <div class="p-8 bg-white flex flex-col flex-1">
+          <div class="mb-4">
+            <div class="h-px w-12 bg-brand-600 mb-4"></div>
+            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna VI</h3>
+          </div>
+          <PromocionCardWaitlist tag="alameda-de-osuna-vi" />
+        </div>
+      </div>
+
       <!-- Chalets Puerta de Hierro -->
       <a
         href="https://clementpuertadehierro.com"
