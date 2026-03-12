@@ -8,6 +8,94 @@ import imgAlamedaOsunaII from '~/assets/images/landing/promocion-alameda-osuna-i
 import imgAlamedaOsunaI from '~/assets/images/landing/promocion-alameda-osuna-i.jpg';
 import NewsletterSubscribe from '~/components/landing/NewsletterSubscribe.astro';
 import PromocionCardWaitlist from '~/components/landing/PromocionCardWaitlist.astro';
+
+type PromocionStatus = 'proximamente' | 'disponible' | '100% vendido';
+
+interface Promocion {
+  name: string;
+  description?: string;
+  image: ImageMetadata;
+  status: PromocionStatus;
+  tag: string;
+  href?: string;
+  extra?: boolean;
+}
+
+const promociones: Promocion[] = [
+  {
+    name: 'Alameda de Osuna VI',
+    image: imgAlamedaOsunaVI,
+    status: 'proximamente',
+    tag: 'alameda-de-osuna-vi',
+  },
+  {
+    name: 'Chalets Puerta de Hierro',
+    description:
+      'CLEMENT Puerta de Hierro es una promoción de 6 chalets pareados Gran Lujo en parcela de 500 m² aprox. con piscina individual y garaje privado. Viviendas de más de 400 m² construidos en un entorno exclusivo con seguridad 24 horas.',
+    image: imgPuertaHierro,
+    status: 'disponible',
+    tag: 'puerta-de-hierro',
+    href: 'https://clementpuertadehierro.com',
+  },
+  {
+    name: 'Alameda de Osuna V',
+    description:
+      'CLEMENT Alameda de Osuna V se distribuye en dos portales de cinco plantas más ático en cada uno de ellos. La promoción está compuesta por 48 viviendas de 2 y 4 dormitorios con terraza, plaza de garaje, piscina y zonas comunes.',
+    image: imgAlamedaOsunaV,
+    status: '100% vendido',
+    tag: 'alameda-de-osuna-v',
+    href: '/promociones/alameda-de-osuna-v/',
+  },
+  {
+    name: 'Alameda de Osuna IV',
+    description:
+      'CLEMENT Alameda de Osuna IV se distribuye en cuatro portales con cuatro plantas más ático en cada uno de ellos. La promoción está formada por 43 viviendas de 2, 3 y 4 dormitorios, todas ellas con terraza, trastero y garaje.',
+    image: imgAlamedaOsunaIV,
+    status: '100% vendido',
+    tag: 'alameda-de-osuna-iv',
+    href: '/promociones/alameda-de-osuna-iv/',
+  },
+  {
+    name: 'Alameda de Osuna III',
+    description:
+      'CLEMENT pone a la venta esta excelente Promoción de 66 viviendas, pisos de 1, 2, 3 y 4 dormitorios distribuidos en 5 portales: 1ª, 2ª, 3ª y 4ª planta y áticos. Todas las viviendas disponen de terraza.',
+    image: imgAlamedaOsunaIII,
+    status: '100% vendido',
+    tag: 'alameda-de-osuna-iii',
+    href: '/promociones/alameda-de-osuna-iii/',
+  },
+  {
+    name: 'Alameda de Osuna II',
+    description:
+      'CLEMENT Alameda de Osuna II se distribuye en cuatro portales con cuatro plantas más ático en cada uno de ellos. La promoción está formada por 43 viviendas de 2, 3 y 4 dormitorios, todas ellas con terraza, trastero y garaje.',
+    image: imgAlamedaOsunaII,
+    status: '100% vendido',
+    tag: 'alameda-de-osuna-ii',
+    href: '/promociones/alameda-de-osuna-ii/',
+  },
+  {
+    name: 'Alameda de Osuna I',
+    description:
+      'CLEMENT Alameda de Osuna I se distribuye en cinco portales con cuatro plantas más ático en cada uno de ellos. La promoción está formada por 44 viviendas de 1, 2, 3 y 4 dormitorios, todas ellas con terraza, trastero y garaje.',
+    image: imgAlamedaOsunaI,
+    status: '100% vendido',
+    tag: 'alameda-de-osuna-i',
+    href: '/promociones/alameda-de-osuna-i/',
+    extra: true,
+  },
+];
+
+const statusBadge: Record<PromocionStatus, string> = {
+  'proximamente': 'bg-blue-600 text-white border border-white/20',
+  'disponible': 'bg-linear-to-r from-emerald-600 to-emerald-700 text-white border border-white/20',
+  '100% vendido': 'bg-slate-700/80 text-slate-200 border border-white/10',
+};
+
+const statusLabel: Record<PromocionStatus, string> = {
+  'proximamente': 'Próximamente',
+  'disponible': 'Disponible',
+  '100% vendido': '100% Vendido',
+};
 ---
 
 <section id="promociones" class="py-32 bg-linear-to-b from-slate-50 via-white to-slate-50 scroll-reveal">
@@ -27,279 +115,88 @@ import PromocionCardWaitlist from '~/components/landing/PromocionCardWaitlist.as
     <NewsletterSubscribe />
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Alameda de Osuna VI - Próximamente -->
-      <div
-        class="bg-white overflow-hidden border border-slate-200 scroll-reveal-item relative flex flex-col cursor-default select-none"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaVI.src}
-            alt="Alameda de Osuna VI"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-blue-600 text-white px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/20"
-            >Próximamente</span
-          >
-        </div>
-        <div class="p-8 bg-white flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-brand-600 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna VI</h3>
-          </div>
-          <PromocionCardWaitlist tag="alameda-de-osuna-vi" />
-        </div>
-      </div>
+      {promociones.map((p) => {
+        const isProximamente = p.status === 'proximamente';
+        const isSoldOut = p.status === '100% vendido';
+        const Tag = isProximamente ? 'div' : 'a';
 
-      <!-- Chalets Puerta de Hierro -->
-      <a
-        href="https://clementpuertadehierro.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative flex flex-col"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgPuertaHierro.src}
-            alt="Chalets Puerta de Hierro"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-linear-to-r from-emerald-600 to-emerald-700 text-white px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/20"
-            >Disponible</span
+        return (
+          <Tag
+            href={!isProximamente ? p.href : undefined}
+            target={p.href?.startsWith('http') ? '_blank' : undefined}
+            rel={p.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+            class:list={[
+              'bg-white overflow-hidden border border-slate-200 scroll-reveal-item relative flex flex-col',
+              isProximamente && 'cursor-default select-none',
+              !isProximamente && 'group transition-all duration-700 hover:border-brand-500/50',
+              isSoldOut && 'opacity-90',
+              p.extra && 'extra-promocion hidden',
+            ]}
           >
-        </div>
-        <div class="p-8 bg-white group-hover:bg-slate-50/50 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-brand-600 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
-              Chalets Puerta de Hierro
-            </h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT Puerta de Hierro es una promoción de 6 chalets pareados Gran Lujo en parcela de 500 m² aprox. con
-            piscina individual y garaje privado. Viviendas de más de 400 m² construidos en un entorno exclusivo con
-            seguridad 24 horas.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
+            <div class="aspect-4/3 relative overflow-hidden">
+              <img
+                src={p.image.src}
+                alt={p.name}
+                class:list={[
+                  'absolute inset-0 w-full h-full object-cover',
+                  !isProximamente && 'group-hover:scale-105 transition-transform duration-700',
+                ]}
+              />
+              <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
+              <span
+                class:list={[
+                  'absolute top-6 right-6 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm',
+                  statusBadge[p.status],
+                ]}
+              >
+                {statusLabel[p.status]}
+              </span>
+            </div>
+            <div
+              class:list={[
+                'p-8 flex flex-col flex-1',
+                isProximamente && 'bg-white',
+                !isProximamente && isSoldOut && 'bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700',
+                !isProximamente && !isSoldOut && 'bg-white group-hover:bg-slate-50/50 transition-colors duration-700',
+              ]}
             >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Alameda de Osuna V -->
-      <a
-        href="/promociones/alameda-de-osuna-v/"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative opacity-90 flex flex-col"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaV.src}
-            alt="Alameda de Osuna V"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-slate-700/80 text-slate-200 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/10"
-            >100% vendido</span
-          >
-        </div>
-        <div class="p-8 bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna V</h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT Alameda de Osuna V se distribuye en dos portales de cinco plantas más ático en cada uno de ellos. La
-            promoción está compuesta por 48 viviendas de 2 y 4 dormitorios con terraza, plaza de garaje, piscina y zonas
-            comunes.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
-            >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Alameda de Osuna IV -->
-      <a
-        href="/promociones/alameda-de-osuna-iv/"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative opacity-90 flex flex-col"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaIV.src}
-            alt="Alameda de Osuna IV"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-slate-700/80 text-slate-200 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/10"
-            >100% vendido</span
-          >
-        </div>
-        <div class="p-8 bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna IV</h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT Alameda de Osuna IV se distribuye en cuatro portales con cuatro plantas más ático en cada uno de
-            ellos. La promoción está formada por 43 viviendas de 2, 3 y 4 dormitorios, todas ellas con terraza, trastero
-            y garaje.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
-            >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Alameda de Osuna III -->
-      <a
-        href="/promociones/alameda-de-osuna-iii/"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative opacity-90 flex flex-col"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaIII.src}
-            alt="Alameda de Osuna III"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-slate-700/80 text-slate-200 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/10"
-            >100% vendido</span
-          >
-        </div>
-        <div class="p-8 bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna III</h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT pone a la venta esta excelente Promoción de 66 viviendas, pisos de 1, 2, 3 y 4 dormitorios
-            distribuidos en 5 portales: 1ª, 2ª, 3ª y 4ª planta y áticos. Todas las viviendas disponen de terraza.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
-            >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Alameda de Osuna II -->
-      <a
-        href="/promociones/alameda-de-osuna-ii/"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative opacity-90 flex flex-col"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaII.src}
-            alt="Alameda de Osuna II"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-slate-700/80 text-slate-200 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/10"
-            >100% vendido</span
-          >
-        </div>
-        <div class="p-8 bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna II</h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT Alameda de Osuna II se distribuye en cuatro portales con cuatro plantas más ático en cada uno de
-            ellos. La promoción está formada por 43 viviendas de 2, 3 y 4 dormitorios, todas ellas con terraza, trastero
-            y garaje.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
-            >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Alameda de Osuna I -->
-      <a
-        href="/promociones/alameda-de-osuna-i/"
-        class="group bg-white overflow-hidden transition-all duration-700 border border-slate-200 hover:border-brand-500/50 scroll-reveal-item relative opacity-90 flex flex-col extra-promocion hidden"
-      >
-        <div class="aspect-4/3 relative overflow-hidden">
-          <img
-            src={imgAlamedaOsunaI.src}
-            alt="Alameda de Osuna I"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-          <span
-            class="absolute top-6 right-6 bg-slate-700/80 text-slate-200 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm border border-white/10"
-            >100% vendido</span
-          >
-        </div>
-        <div class="p-8 bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700 flex flex-col flex-1">
-          <div class="mb-4">
-            <div class="h-px w-12 bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500 mb-4"></div>
-            <h3 class="text-2xl font-serif font-bold text-slate-900 mb-3">Alameda de Osuna I</h3>
-          </div>
-          <p class="text-slate-600 leading-relaxed font-light flex-1">
-            CLEMENT Alameda de Osuna I se distribuye en cinco portales con cuatro plantas más ático en cada uno de
-            ellos. La promoción está formada por 44 viviendas de 1, 2, 3 y 4 dormitorios, todas ellas con terraza,
-            trastero y garaje.
-          </p>
-          <div class="mt-6 pt-5 border-t border-slate-200">
-            <span
-              class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300"
-            >
-              Ver promoción
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
+              <div class="mb-4">
+                <div
+                  class:list={[
+                    'h-px w-12 mb-4',
+                    isProximamente && 'bg-brand-600',
+                    !isProximamente && isSoldOut && 'bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500',
+                    !isProximamente && !isSoldOut && 'bg-brand-600',
+                  ]}
+                ></div>
+                <h3
+                  class:list={[
+                    'text-2xl font-serif font-bold text-slate-900 mb-3',
+                    !isProximamente && !isSoldOut && 'group-hover:text-slate-700 transition-colors',
+                  ]}
+                >
+                  {p.name}
+                </h3>
+              </div>
+              {isProximamente ? (
+                <PromocionCardWaitlist tag={p.tag} />
+              ) : (
+                <>
+                  <p class="text-slate-600 leading-relaxed font-light flex-1">{p.description}</p>
+                  <div class="mt-6 pt-5 border-t border-slate-200">
+                    <span class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300">
+                      Ver promoción
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </>
+              )}
+            </div>
+          </Tag>
+        );
+      })}
     </div>
 
     <div id="mostrar-mas-wrapper" class="text-center mt-12">
