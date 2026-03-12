@@ -188,9 +188,11 @@ const statusLabel: Record<PromocionStatus, string> = {
                 {isProximamente ? (
                   <>
                     {p.description && (
-                      <p class="text-slate-600 leading-relaxed font-light mb-6">{p.description}</p>
+                      <p class="text-slate-600 leading-relaxed font-light mb-6 flex-1">{p.description}</p>
                     )}
-                    <PromocionCardWaitlist tag={p.tag} />
+                    <div class="mt-6 pt-5 mb-[-5px]">
+                      <PromocionCardWaitlist tag={p.tag} />
+                    </div>
                   </>
                 ) : (
                   <>
