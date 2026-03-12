@@ -4,11 +4,11 @@ import despues from '~/assets/images/landing/piso_a_medida_despues.png';
 import { Image } from 'astro:assets';
 ---
 
-<section id="personaliza" class="py-20 md:py-28 bg-stone-50">
+<section id="personaliza" class="py-20 md:py-28 bg-stone-50 scroll-reveal">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       <!-- Before/After Comparison Slider -->
-      <div class="scroll-animate">
+      <div class="scroll-reveal-item">
         <div class="rounded-xl overflow-hidden shadow-lg">
           <img-comparison-slider class="comparison-slider">
             <Image
@@ -66,7 +66,7 @@ import { Image } from 'astro:assets';
       </div>
 
       <!-- Text Column -->
-      <div class="scroll-animate" data-delay="200">
+      <div class="scroll-reveal-item">
         <p class="text-slate-500 font-medium tracking-[0.15em] uppercase text-sm mb-4">Personalización</p>
         <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl text-default leading-tight mb-6">Vivienda a medida</h2>
         <p class="text-muted leading-relaxed mb-6 text-justify">

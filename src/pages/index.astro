@@ -29,32 +29,34 @@ import NewsletterCTA from '~/components/landing/NewsletterCTA.astro';
 </PageLayout>
 
 <script>
-  // Intersection Observer for scroll animations
   const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
+    rootMargin: '0px 0px -80px 0px',
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe all sections with scroll-reveal class
   document.querySelectorAll('.scroll-reveal').forEach((el) => {
-    observer.observe(el);
+    revealObserver.observe(el);
   });
 
-  // Staggered animation for items within sections
+  // Sibling-based stagger: each item's position in its parent determines its delay
   const itemObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        const siblings = entry.target.parentElement?.querySelectorAll('.scroll-reveal-item');
+        const idx = siblings ? Array.from(siblings).indexOf(entry.target as Element) : 0;
         setTimeout(() => {
           entry.target.classList.add('is-visible');
-        }, index * 100);
+        }, idx * 80);
+        itemObserver.unobserve(entry.target);
       }
     });
   }, observerOptions);
@@ -62,16 +64,49 @@ import NewsletterCTA from '~/components/landing/NewsletterCTA.astro';
   document.querySelectorAll('.scroll-reveal-item').forEach((el) => {
     itemObserver.observe(el);
   });
+
+  // Scale-in animation for full-bleed images
+  const imgObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          imgObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px' }
+  );
+
+  document.querySelectorAll('.scroll-reveal-img').forEach((el) => {
+    imgObserver.observe(el);
+  });
 </script>
 
-<style>
+<style is:global>
+  @keyframes heroFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade {
+    opacity: 0;
+    animation: heroFadeIn 0.9s ease-out forwards;
+  }
+
   /* Scroll reveal animations */
   .scroll-reveal {
     opacity: 0;
     transform: translateY(30px);
     transition:
-      opacity 0.8s ease-out,
-      transform 0.8s ease-out;
+      opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .scroll-reveal.is-visible {
@@ -83,8 +118,8 @@ import NewsletterCTA from '~/components/landing/NewsletterCTA.astro';
     opacity: 0;
     transform: translateY(20px);
     transition:
-      opacity 0.6s ease-out,
-      transform 0.6s ease-out;
+      opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .scroll-reveal-item.is-visible {
@@ -92,8 +127,34 @@ import NewsletterCTA from '~/components/landing/NewsletterCTA.astro';
     transform: translateY(0);
   }
 
+  .scroll-reveal-img {
+    opacity: 0;
+    transform: scale(1.04);
+    transition:
+      opacity 1s ease-out,
+      transform 1.2s ease-out;
+  }
+
+  .scroll-reveal-img.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Respect reduced-motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-fade,
+    .scroll-reveal,
+    .scroll-reveal-item,
+    .scroll-reveal-img {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+      transition: none !important;
+    }
   }
 </style>
