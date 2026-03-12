@@ -1,241 +1,204 @@
 ---
-title: "Privacy Policy"
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Política de privacidad'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: July 30, 2024
+_Última actualización_: 17 de febrero de 2026
 
-When you use MyWebsite, you entrust us with some of your information. We understand that this is a big responsibility, and we work hard to protect your information and give you control.
+Te damos la bienvenida a nuestra web y te invitamos a conocer estos términos antes de que facilites tus datos personales en ella.
 
-This Privacy Policy is intended to help you understand what information we collect, why we collect it, and how you can update, manage, export, and delete your information.
+## Menores de edad
 
-We use your personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+Por el carácter jurídico de nuestra web no esta permitido el tratamiento de datos personales a menores de edad. Si eres menor de 18 años y has accedido a este sitio web no debes usar el formulario de contacto.
 
-## Interpretation and Definitions
+## Algunos principios que debes conocer
 
-### Interpretation
+En clementpuertadehierro.com es una prioridad el respeto y la protección de los datos personales de los usuarios. Como usuario debes saber que tus derechos están garantizados en esta web.
 
-Words with initial capital letters have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or plural.
+Nos hemos esforzado en crear un espacio seguro y confiable y por eso queremos compartir nuestros principios respecto a tu privacidad:
 
-### Definitions
+Nunca solicitamos información personal a menos que realmente sea necesaria para prestarte los servicios que nos requieras.
+Nunca compartimos información personal de nuestros usuarios con nadie, excepto para cumplir con la ley o en caso de que cuente con tu autorización expresa.
+Nunca utilizamos tus datos personales con una finalidad diferente a la expresada en esta política de privacidad.
+Esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación, por lo que te aconsejo como usuario que la visites periódicamente. Será aplicable en caso de que los usuarios decidan rellenar cualquiera de sus formularios de contacto donde se recaben datos de carácter personal.
 
-For the purposes of this Privacy Policy
+## Regulaciones legales a las que se acoge esta web
 
-- **Company** (referred to as either “the Company,” “We,” “Us,” or “Our” in this Agreement) means GearShift, S.L., a company based in Spain registered under CIF B19849777.
+CLEMENT ha adecuado esta web a las exigencias del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD), así como con la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE o LSSI).
 
-- **Service** means any product created and maintained by the Company.
+## Responsable del tratamiento de tus datos personales
 
-- **You** (referred to as “You” or “Your” in this Agreement) refers to the natural person accessing or using the Services, or the company or other legal entity on behalf of which such natural person is accessing or using the Services, as applicable.
+Identidad del responsable: CLEMENT, S.A.
+Nombre comercial: CLEMENT.
+NIF/CIF: A-28283067.
+Dirección: Santibáñez de Béjar nº 6, 28042, Madrid – España
+Correo electrónico: info@clement.es
+Datos de contacto del Delegado de Protección de Datos: info@clement.es
 
-- **Device** means any device that can access the Services, such as a computer, smartphone, digital tablet, etc.
+Para el tratamiento de datos de nuestros usuarios implementamos todas las medidas técnicas y organizativas de seguridad establecidas en la legislación vigente.
 
-- **Account** means a unique account created for you to access Our Service or parts of Our Service.
+## ¿Cómo hemos obtenido tus datos?
 
-- **Cookies** are small files that a website or web application places on your computer, mobile device, or other device and contain information about your authentication or browsing history on that website, among many other uses.
+La visita a clementpuertadehierro.com no supone que el usuario esté obligado a facilitar ninguna información sobre sí mismo. No obstante, el uso de algunos de los servicios disponibles en clementpuertadehierro.com depende de la cumplimentación de formularios de información personal.
 
-- **Personal Data** is any information relating to an identified or identifiable individual.
+Los datos que se soliciten en los diferentes formularios de clementpuertadehierro.com son los necesarios para prestar los servicios solicitados. La negativa a proporcionar los datos señalados como necesarios puede suponer la imposibilidad de prestar adecuadamente dichos servicios. Así mismo, podrá facilitar datos de modo voluntario con el objetivo de que puedan prestarse de modo óptimo estos servicios:
 
-- **Usage Data** refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+Formulario de contacto
 
-## Data we collect
+## ¿Cuáles son tus derechos cuando nos facilitas tus datos?
 
-### Personal data
+Cualquier persona tiene derecho a obtener confirmación sobre si CLEMENT esta tratando datos personales que nos conciernen o no.
 
-When you use our Services, we typically ask for your email address. Your email address will be used for identification purposes and will be linked to your account on all devices on which you use our services.
+Las personas interesadas tienen derecho a:
 
-In addition, we may ask you to provide us with certain personally identifiable information that may be used for billing, to improve the user experience, to contact you, or to identify you. Personally identifiable information may include, but is not limited to:
+Solicitar el acceso a los datos personales relativos al interesado.
+Solicitar su rectificación o supresión.
+Solicitar la limitación de su tratamiento.
+Oponerse al tratamiento.
+Solicitar la portabilidad de los datos.
+Los interesados podrán acceder a sus datos personales, así como a solicitar la rectificación de datos inexactos o, en su caso, a solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos.
+En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso, únicamente los conservaremos para el ejercicio o la defensa de reclamaciones.
 
-- First name
-- Last name
-- Email address
-- Phone number
-- Address, State, Province, Postal code, City
+En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. CLEMENT dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. También podrán solicitar la portabilidad de sus datos.
 
-### Usage Data
+Los interesados también tendrán derecho a la tutela judicial efectiva y a presentar una reclamación ante la autoridad de control, en este caso, la Agencia Española de Protección de Datos, si consideran que el tratamiento de datos personales que le conciernen infringe el Reglamento.
 
-Usage Data is collected automatically when using the Service.
+## ¿Con qué finalidad tratamos tus datos personales?
 
-Usage Data may include information such as your device's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.
+Cuando un usuario se conecta con esta web para realizar una consulta desde el formulario de contacto, está facilitando información de carácter personal de la que es responsable CLEMENT. Esa información puede incluir datos de carácter personal como pueden ser tu dirección IP, nombre, dirección de correo electrónico, y otra información. Al facilitar esta información, el usuario da su consentimiento para que su información sea recopilada, utilizada, gestionada y almacenada por CLEMENT sólo como se describe en Información Legal y en la presente Política de Privacidad.
 
-When you access the Service by or through a mobile device, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers, and other diagnostic data.
+En el clementpuertadehierro.com existen diferentes sistemas de captura de información personal y trato la información que nos facilitan las personas interesadas con el siguiente fin por cada sistema de captura (formularios):
 
-We may also collect information that your browser sends whenever you visit our Service or when you access the Service by or through a mobile device.
+**Formulario de Contacto**: atención de consultas y solicitudes de contacto recibidas por cualquier medio relacionadas de los servicios de CLEMENT:
 
-### MyWebsite-specific data
+Datos recabados: Nombre, apellidos, teléfono, email y consulta.
+Finalidad: Contestar a las solicitudes de información que el interesado haya realizado por cualquier medio sobre los productos y servicios de CLEMENT.
+Legitimación: En base a la prestación del consentimiento CLEMENT está legitimado para tratar los datos del interesado facilitado a través de la solicitud de contacto, y conforme al interés legítimo para el desarrollo y mantenimiento de relaciones comerciales.
+Plazos de conservación: los datos se conservarán hasta el momento en que el interesado solicite la baja o supresión de sus datos y una vez suprimidos se conservarán por un periodo máximo de 6 años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
 
-#### Usage logs
+**Servicios**: Datos facilitados para la prestación de los servicios de CLEMENT. Los servicios se identificarán en el momento de la recogida del dato y registro del mismo.
 
-#### Usage logs
+Datos recabados: Nombre, Apellidos, DNI, dirección de contacto, domicilio, correo electrónico, teléfono de contacto y demás datos necesarios según el registro solicitado, y que será exclusivamente necesarios para el registro en los servicios de CLEMENT.
+Finalidad: El registro de los interesados para la prestación de los servicios.
+Legitimación: La relación jurídica o contractual existente necesaria para la prestación del servicio.
+Plazos de conservación: Los datos se conservarán durante el tiempo necesario para la finalidad del tratamiento, y una vez finalizada la misma se podrán conservar por un periodo de seis años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
 
-We collect general information about how you use the Service, such as the views you use, the features you use, the actions you take, and how often you use the Service. For example, we record the last time you logged into the Service or how many events you created.
+**Promocional o Newsletters**: La remisión de información, novedades, avisos, recordatorios y promociones que pudieran ser de su interés, relacionadas con las actividades de CLEMENT.
 
-#### Calendar metadata
+Datos recabados: Dirección de correo electrónico, nombre y apellidos.
+Finalidad: El registro de los interesados para la remisión de información, novedades y promociones de los servicios de CLEMENT.
+Legitimación: Prestación del consentimiento del interesado a CLEMENT para el alta en servicios de promocionales.
+Plazos de conservación: Los datos se conservarán hasta el momento en que el interesado solicite la baja o supresión de sus datos y una vez suprimidos se conservarán por un periodo máximo de 6 años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
 
-When you link an external calendar provider such as Google Calendar, Microsoft Exchange, Office 365, iCloud, or other CalDAV calendars, we collect the unique identifier and email address or username for these accounts. By default, passwords and access tokens are only stored locally and never leave your computer. In other words, we cannot remotely access your account with the information we collect.
+**Curriculum o Empleo**: Envío del Curriculum a través de la web o a través de cualquier medio a CLEMENT.
 
-When provided by the calendar provider, we collect the calendar name, its settings, including time zone, and the email address associated with the account. We also collect general statistics such as the number of calendars in an account or the total number of events and contacts in each calendar.
+Datos recabados: Área profesional, nombre, apellidos, teléfono, e-mail, CV, carta de presentación y cualquier otro dato personal asociado al Curriculum o perfil profesional.
+Finalidad: Gestión de la candidatura del interesado a los procesos de selección publicados o a otros puestos vacantes acordes a su perfil profesional que puedan surgir a futuro dentro de las actividades de CLEMENT.
+Plazos de conservación: Los datos se conservarán hasta que se le adjudique un puesto de trabajo o hasta que nos solicite la supresión de los mismos. Se conservarán por tanto durante el tiempo necesario para la finalidad del tratamiento, y una vez finalizada se podrán conservar por un periodo de seis años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
+Legitimación: Prestación del consentimiento del interesado.
+Destinatarios: Los datos facilitados y derivados del proceso de selección podrán ser cedidos a Terceras empresas identificadas por el interesado y que pudieran ser necesarias para la selección del candidato.
 
-For some more advanced features, such as enabling shared availability and scheduling links, MyWebsite requires continuous access to the latest status of your calendar. In this case, you will be asked whether or not you want to connect the account to MyWebsite. If you agree, we will collect the account credentials, which will be stored in a secure manner.
+**Alta y Seguimiento Cuentas Corporativas de Redes Sociales Web**: los datos personales que facilita o habilita a las redes sociales al convertirse en seguidor de las mismas.
 
-#### Surveys
+Las cuentas corporativas de las redes sociales de CLEMENT son las siguientes:
 
-‍If you fill out research surveys on MyWebsite, we collect your responses to the questionnaires. Typically, the results of these surveys are anonymous and not linked to your MyWebsite profile. Sometimes, the survey may ask you to leave your email address. In this case, the survey is not anonymous and may be linked to your MyWebsite profile or your activities on MyWebsite. Please note that participation is always optional.
+FACEBOOK: @CLEMENTCALIDAD
+TWITTER: @CLEMENTCALIDAD
+LINKEDIN: @clement
+Datos recabados: Nombre Apellidos, NIF, dirección de contacto, domicilio, correo electrónico, teléfono de contacto, y demás datos propios de cada red social.
+Finalidad: Seguimiento red social.
+Legitimación: Prestación del consentimiento del Interesado.
+Plazos de conservación: Los datos se conservarán durante el tiempo necesario para la finalidad del tratamiento, y una vez finalizada la misma se podrán conservar por un periodo de seis años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
 
-## Tracking Technologies and Cookies
+**Clientes/Proveedores**: Datos personales profesionales facilitados por Clientes/Proveedores para la prestación de servicios y gestión de la relación jurídica o contractual.
 
-We use cookies and similar tracking technologies to track activity on our Service and store certain information. The tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies we use may include:
+Datos recabados: Nombre Apellidos, DNI, dirección profesional de contacto, correo electrónico, teléfono de contacto, datos bancarios.
+Finalidad: La gestión de la relación contractual del servicio.
+Legitimación: La relación jurídica o contractual existente necesaria para la prestación del servicio.
+Plazos de conservación: Los datos se conservarán durante el tiempo necesario para la finalidad del tratamiento o supresión de los mismos, y una vez finalizada o suprimida se podrán conservar por un periodo de seis años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
 
-- A cookie is a small file that is placed on your device. You can instruct your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service. Unless you have adjusted your browser setting so that it will refuse cookies, our Service may use cookies.
-- Some sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, count the users who have visited those pages or opened an email and for other website-related statistics (e.g., recording the popularity of a particular section and verifying system and server integrity).
+**Control de Acceso y Seguridad**: Datos recabados por cámaras de Videovigilancia o facilitados para el control de acceso a los edificios:
 
-Cookies can be “persistent” or “session” cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+Datos recabados: Nombre Apellidos, DNI, e imágenes.
+Finalidad: Controlar el acceso y la gestión de la seguridad interna de las instalaciones de CLEMENT.
+Legitimación: Interés legítimo en garantizar la seguridad en las instalaciones por parte de su titular, lo que justifica el registro de datos en el control de acceso, y que las imágenes sean captadas necesariamente al acceder a estas instalaciones.
+Plazos de conservación: Los datos serán conservados durante un periodo máximo de un mes, salvo que fuese necesario conservarlos durante más tiempo por ser conveniente para esclarecer alguna infracción o hecho ilícito detectado.
 
-We use both Session and Persistent Cookies for the purposes set out below:
+Existen otras finalidades por la que tratamos tus datos personales:
 
-- Necessary/essential cookies
+- Para garantizar el cumplimiento de las condiciones de uso y la ley aplicable. Esto puede incluir el desarrollo de herramientas y algoritmos que ayudan a esta web a garantizar la confidencialidad de los datos personales que recoge.
 
-  Type: Session cookies
+- Para apoyar y mejorar los servicios que ofrece esta web.
 
-  Managed by: Us
+Igualmente, le informamos que determinadas funcionalidades de clementpuertadehierro.com dependen del uso de cookies, por lo que, en el caso de que no haya denegado la posibilidad de su uso, se procederá al tratamiento de determinada información relacionada con su uso de clementpuertadehierro.com. Puede ver las condiciones para su uso en la Política de cookies
+Para gestionar las redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de CLEMENT, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de clementpuertadehierro.com. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de clementpuertadehierro.com. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaremos los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.
+CLEMENT no vende, alquila ni cede datos de carácter personal que puedan identificar al usuario, ni lo hará en el futuro a terceros sin el consentimiento previo.
+Ejercicio de derechos
 
-  Purpose: These cookies are essential to provide you with the services available through the Services and to enable you to use some of their features. They help authenticate users and prevent fraudulent use of user accounts. Without these cookies, the services you have requested cannot be provided, and we only use these cookies to provide you with those services.
+El Interesado tiene reconocidos sus derechos a acceso, rectificación, supresión, limitación, oposición y portabilidad de sus datos. De igual modo, está amparado por el derecho a retirar su consentimiento para el tratamiento por CLEMENT. Asimismo, le asiste el derecho a reclamar ante la autoridad de control.
 
-- Cookie policy / Cookie acceptance notice\*\*
+En cualquier momento el Interesado podrá ejercitar sus derechos mediante la remisión de una comunicación, adjuntando un documento que acredite su identidad e indicando expresamente el derecho que desea ejercitar, a CLEMENT en el domicilio más arriba indicado o enviando un correo electrónico a la dirección info@clement.es
 
-Type: Persistent cookies
+## Legitimación para el tratamiento de tus datos
 
-Managed by: Us
+La base legal para el tratamiento de sus datos es: el consentimiento. El tratamiento de los datos del usuario por parte de clementpuertadehierro.com se ampara en la solicitud por parte del usuario de los servicios puestos a disposición a través del presente portal web.
 
-Purpose: These cookies identify whether users have accepted the use of cookies on the Services.
+Para contactar o realizar comentarios en esta web se requiere el consentimiento con esta Política de Privacidad.
 
-- Functionality Cookies
+## ¿Por cuánto tiempo conservaremos tus datos?
 
-Type: Persistent cookies
+Los datos personales proporcionados se conservarán:
 
-Managed by: Us
+Mientras se mantenga la relación mercantil. Una vez finalizada dicha relación, sus datos serán conservados durante los plazos legalmente exigidos para las posibles responsabilidades derivadas del servicio prestado
+No se solicite su supresión por parte del interesado.
+¿A qué destinatarios se comunicarán tus datos?
 
-Purpose: These cookies allow us to remember the choices you make when using the Services, such as remembering your login details or language preference. The purpose of these cookies is to provide you with a more personal experience and to avoid you having to re-enter your preferences each time you use the Services.
+Para prestar servicios estrictamente necesarios para el desarrollo de la actividad, clementpuertadehierro.com comparte datos con los siguientes prestadores bajo sus correspondientes condiciones de privacidad.
 
-For more information about the cookies we use and your options in relation to cookies, please visit our Cookie Policy or the Cookies section of our Privacy Policy.
+Todas las utilidades ofrecidas por terceros son estrictamente necesarias para el desarrollo de nuestros servicios y han sido seleccionadas atendiendo al cumplimiento de los derechos que preservamos en esta web.
 
-## How we use your data
+Las siguientes empresas tendrán acceso a la información personal necesaria para realizar sus funciones como encargados de tratamiento, pero no podrán utilizarla para otros fines. Además, deberán tratar la información personal de conformidad con la presente Política de Privacidad y la legislación aplicable en materia de protección de datos.
 
-The Company may use your Data for the following purposes:
+Hosting: Arsys Internet S.L.U, con NIF:B-85294916 con domicilio en C/ Chile nº 54, 26007, Logroño (La Rioja), España. Más información en www.arsys.es. Arsys Internet S.L.U, trata los datos con la finalidad de realizar sus servicios como proveedor de hosting a CLEMENT.
+Google Analytics: un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Google Analytics utiliza “cookies”, que son archivos de texto ubicados en tu ordenador, para ayudar a clementpuertadehierro.com a analizar el uso que hacen los usuarios del sitio web. La información que genera la cookie acerca de su uso de clementpuertadehierro.com (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos.
+Mailchimp: es un servicio de email prestado por MailChimp y operado por The Rocket Science Group LLC, una compañia con sede en el Estado de Georgia en los Estados Unidos. Mailchimp gestiona la información de contacto y los formularios de clementpuertadehierro.com, asi como las opciones que el usuario activa explicitamente en dichos formularios para aceptar la Política de Privacidad o el envio de correos electrónicos. Los datos personales estarán ubicados en los servidores de MailChimp. Los Estados Unidos se integran dentro del Marco de Privacy Shield UE-EE.UU y el Marco Privacy Shield Suiza-EE.UU, y son reconocidos como un pais con un nivel de seguridad adecuado por el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD)
+Datos de navegación
 
-- **To provide, maintain, and improve Our Service**, including to monitor the use of Our Service.
+Al navegar por clementpuertadehierro.com se pueden recoger datos identificables, que pueden incluir, direcciones IP, ubicación geográfica aproximada, un registro de cómo se utilizan los servicios y sitios, y otros datos que no pueden ser utilizados para identificar al usuario. Entre los datos no identificativos están también los relacionados a tus hábitos de navegación a través de servicios de terceros. Esta web utiliza los siguientes servicios de análisis de terceros, en concreto con Google Analytics funcionamos con la opción de IP anonimizada para evitar la identificación usuarios:
 
-- **To manage Your Account:** to manage Your registration as a user of the Service. The Personal Data You provide may give You access to different functionalities of the Service that are available to You as a registered user.
+- Google Analytics.
+- Search Console.
 
-- **For the performance of a contract:** the development, fulfillment, and performance of the contract for the purchase of the products, items, or services you have purchased or any other contract with Us through the Service.
+Utilizamos esta información para analizar tendencias, administrar el sitio, rastrear los movimientos de los usuarios alrededor del sitio y para recopilar información demográfica sobre nuestra base de usuarios en su conjunto.
 
-- To contact you:\*\* To contact you by email, phone calls, SMS, or other equivalent forms of electronic communication, such as push notifications from a mobile app about updates or informational communications related to the features, products, or services you have contracted, including security updates, when necessary or reasonable for their implementation.
+## Tus derechos al facilitar tus datos personales
 
-- **To provide you** with news, special offers, and general information about other goods, services, and events that we offer and that are similar to those you have already purchased or inquired about, unless you have opted out of receiving such information.
+Cualquier persona tiene derecho a obtener confirmación sobre si en clementpuertadehierro.com se están tratando datos personales que les conciernan, o no.
 
-- To manage your requests:\*\* To respond to and manage your requests.
+Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos.
 
-- For business transfers:\*\* We may use Your information to evaluate or carry out a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceedings, in which the Personal Data We hold about users of Our services is among the assets transferred.
+En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones.
 
-- For other purposes: We may use your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and to evaluate and improve our service, products, services, marketing, and your experience.
+En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos.
 
-## Data Disclosure
+CLEMENT dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones.
 
-We do not sell your data to anyone and never will. We also do not share your data with third parties. However, the data we collect is stored and processed on cloud infrastructure provided by Our partners (the data processors in terms of GDPR). Our data centers are located in Switzerland or the European Union. Our partners are:
+Podrá ejercitar materialmente sus derechos por correo electrónico en la dirección: info@clement.es
 
-### 1. Stripe
+## Secreto y seguridad de los datos
 
-We rely on Stripe to manage payments and collections for the tool. For more information about Stripe's privacy policy, visit
-https://stripe.com/en-es/privacy
+CLEMENT se compromete en el uso y tratamiento de los datos personales incluidos de los usuarios, respetando su confidencialidad y a utilizarlos de acuerdo con la finalidad de los mismos, así como a dar cumplimiento a su obligación de guardarlos y adaptar todas las medidas para evitar la alteración, pérdida, tratamiento o acceso no autorizado, de conformidad con lo establecido en la normativa vigente de protección de datos.
 
-### 2. Loops
+CLEMENT no puede garantizar la absoluta inexpugnabilidad de la red de Internet y por tanto, la violación de los datos mediante accesos fraudulentos a ellos por parte de terceros.
 
-We use Loops to automate and manage email deliveries for the tool. For more information about Loops' privacy policy, please visit https://loops.so/privacy
+## Exactitud y veracidad de los datos
 
-<!-- ### 1. Google Inc.
+Como usuario, eres el único responsable de la veracidad y corrección de los datos que remitas a clementpuertadehierro.com exonerando a CLEMENT, de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de contacto o suscripción.
 
-We use Google Cloud Platform to power our backend services and to host and process some data. Google Cloud's industry-leading security, third-party audits and certifications, documentation, and legal commitments help us ensure the security of your data. For more information about Google Cloud security, visit https://cloud.google.com/security.
+## Aceptación y consentimiento
 
-### 2. Typeform, SL.
+El usuario declara haber sido informado de las condiciones sobre protección de datos de carácter personal, aceptando y consintiendo el tratamiento de los mismos por parte de CLEMENT en la forma y para las finalidades indicadas en esta Política de Privacidad
 
-We rely on Typeform to conduct our surveys and host related responses. For more information about Typeform's privacy policy, visit
-https://www.typeform.com/help/what-happens-to-my-data
+## Cambios en la Política de Privacidad
 
-### 3. Paddle.com Market Limited
-
-We rely on Paddle for the operation of our payment and subscription system. For more information about Paddle's Privacy Policy, please visit https://paddle.com/privacy -->
-
-## Retention of your personal data
-
-The Company will retain your Personal Data only for as long as necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable law), resolve disputes, and enforce our legal agreements and policies.
-
-The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer periods.
-
-## Transfer of your personal data
-
-Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. This means that this information may be transferred to—and maintained on—computers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ from those in your jurisdiction.
-
-Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
-
-The Company will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
-
-## Deleting your personal data
-
-You have the right to delete or request that we help you delete the Personal Data we have collected about you.
-
-Our Service may offer you the ability to delete certain information about you from the Service itself.
-
-You can update, modify, or delete your information at any time by accessing your account, if you have one, and visiting the account settings section that allows you to manage your personal information. You can also contact us to request access to, correction of, or deletion of any personal information you have provided to us.
-
-However, please note that we may need to retain certain information when we have a legal obligation or legal basis to do so.
-
-## Disclosure of your personal data
-
-### Business transactions
-
-If the company is involved in a merger, acquisition, or sale of assets, your personal data may be transferred. We will notify you before your personal data is transferred and becomes subject to a different privacy policy.
-
-#### Compliance with the law
-
-In certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests from public authorities (e.g., a court or a government agency).
-
-#### Other legal requirements
-
-#### Other legal requirements
-
-The Company may disclose Your Personal Data if it believes in good faith that such action is necessary to:
-
-- Comply with a legal obligation
-- Protect and defend the rights or property of the Company
-- Prevent or investigate possible irregularities in connection with the Service
-- Protect the personal safety of users of the Service or the general public
-- Protect against legal liability
-
-## Security of your personal data
-
-The security of your personal data is important to us, but remember that no method of transmission over the Internet or electronic storage is 100% secure. Although we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.
-
-## Children's privacy
-
-Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected Personal Data from anyone under the age of 13 without verifying parental consent, we will take steps to remove that information from our servers.
-
-If we need to rely on consent as a legal basis for processing your information and your country requires parental consent, we may require your parents' consent before collecting and using that information.
-
-## Links to Other Websites
-
-Our Service may contain links to other websites not operated by us. If you click on a third-party link, you will be directed to that third party's website. We strongly advise you to review the Privacy Policy of every site you visit.
-
-We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
-
-## Changes to this Privacy Policy
-
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
-
-We will let you know by email and/or by means of a prominent notice on our Service, prior to the change becoming effective, and update the “Last updated” date at the top of this Privacy Policy.
-
-We advise you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy will be effective when they are posted on this page.
-
-## Contact Us
-
-If you have any questions about this Privacy Policy, you can contact us
-
-- By email: hello@MyWebsite.app
+CLEMENT, se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales, así como a prácticas de la industria. En dichos supuestos, el Prestador anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.
