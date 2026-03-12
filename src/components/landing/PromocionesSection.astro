@@ -24,6 +24,8 @@ interface Promocion {
 const promociones: Promocion[] = [
   {
     name: 'Alameda de Osuna VI',
+    description:
+      'CLEMENT Alameda de Osuna VI es una promoción de 65 viviendas distribuida en 4 portales de 5 plantas más ático de 2, 3 y 4 dormitorios con terraza, trastero, plaza de garaje y zonas comunes.',
     image: imgAlamedaOsunaVI,
     status: 'proximamente',
     tag: 'alameda-de-osuna-vi',
@@ -86,14 +88,14 @@ const promociones: Promocion[] = [
 ];
 
 const statusBadge: Record<PromocionStatus, string> = {
-  'proximamente': 'bg-blue-600 text-white border border-white/20',
-  'disponible': 'bg-linear-to-r from-emerald-600 to-emerald-700 text-white border border-white/20',
+  proximamente: 'bg-blue-600 text-white border border-white/20',
+  disponible: 'bg-linear-to-r from-emerald-600 to-emerald-700 text-white border border-white/20',
   '100% vendido': 'bg-slate-700/80 text-slate-200 border border-white/10',
 };
 
 const statusLabel: Record<PromocionStatus, string> = {
-  'proximamente': 'Próximamente',
-  'disponible': 'Disponible',
+  proximamente: 'Próximamente',
+  disponible: 'Disponible',
   '100% vendido': '100% Vendido',
 };
 ---
@@ -115,88 +117,104 @@ const statusLabel: Record<PromocionStatus, string> = {
     <NewsletterSubscribe />
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {promociones.map((p) => {
-        const isProximamente = p.status === 'proximamente';
-        const isSoldOut = p.status === '100% vendido';
-        const Tag = isProximamente ? 'div' : 'a';
+      {
+        promociones.map((p) => {
+          const isProximamente = p.status === 'proximamente';
+          const isSoldOut = p.status === '100% vendido';
+          const Tag = isProximamente ? 'div' : 'a';
 
-        return (
-          <Tag
-            href={!isProximamente ? p.href : undefined}
-            target={p.href?.startsWith('http') ? '_blank' : undefined}
-            rel={p.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
-            class:list={[
-              'bg-white overflow-hidden border border-slate-200 scroll-reveal-item relative flex flex-col',
-              isProximamente && 'cursor-default select-none',
-              !isProximamente && 'group transition-all duration-700 hover:border-brand-500/50',
-              isSoldOut && 'opacity-90',
-              p.extra && 'extra-promocion hidden',
-            ]}
-          >
-            <div class="aspect-4/3 relative overflow-hidden">
-              <img
-                src={p.image.src}
-                alt={p.name}
-                class:list={[
-                  'absolute inset-0 w-full h-full object-cover',
-                  !isProximamente && 'group-hover:scale-105 transition-transform duration-700',
-                ]}
-              />
-              <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
-              <span
-                class:list={[
-                  'absolute top-6 right-6 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm',
-                  statusBadge[p.status],
-                ]}
-              >
-                {statusLabel[p.status]}
-              </span>
-            </div>
-            <div
+          return (
+            <Tag
+              href={!isProximamente ? p.href : undefined}
+              target={p.href?.startsWith('http') ? '_blank' : undefined}
+              rel={p.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
               class:list={[
-                'p-8 flex flex-col flex-1',
-                isProximamente && 'bg-white',
-                !isProximamente && isSoldOut && 'bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700',
-                !isProximamente && !isSoldOut && 'bg-white group-hover:bg-slate-50/50 transition-colors duration-700',
+                'bg-white overflow-hidden border border-slate-200 scroll-reveal-item relative flex flex-col',
+                isProximamente && 'cursor-default select-none',
+                !isProximamente && 'group transition-all duration-700 hover:border-brand-500/50',
+                isSoldOut && 'opacity-90',
+                p.extra && 'extra-promocion hidden',
               ]}
             >
-              <div class="mb-4">
-                <div
+              <div class="aspect-4/3 relative overflow-hidden">
+                <img
+                  src={p.image.src}
+                  alt={p.name}
                   class:list={[
-                    'h-px w-12 mb-4',
-                    isProximamente && 'bg-brand-600',
-                    !isProximamente && isSoldOut && 'bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500',
-                    !isProximamente && !isSoldOut && 'bg-brand-600',
+                    'absolute inset-0 w-full h-full object-cover',
+                    !isProximamente && 'group-hover:scale-105 transition-transform duration-700',
                   ]}
-                ></div>
-                <h3
+                />
+                <div class="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/10 to-transparent" />
+                <span
                   class:list={[
-                    'text-2xl font-serif font-bold text-slate-900 mb-3',
-                    !isProximamente && !isSoldOut && 'group-hover:text-slate-700 transition-colors',
+                    'absolute top-6 right-6 px-5 py-2 text-xs font-light uppercase tracking-wider backdrop-blur-sm',
+                    statusBadge[p.status],
                   ]}
                 >
-                  {p.name}
-                </h3>
+                  {statusLabel[p.status]}
+                </span>
               </div>
-              {isProximamente ? (
-                <PromocionCardWaitlist tag={p.tag} />
-              ) : (
-                <>
-                  <p class="text-slate-600 leading-relaxed font-light flex-1">{p.description}</p>
-                  <div class="mt-6 pt-5 border-t border-slate-200">
-                    <span class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300">
-                      Ver promoción
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                      </svg>
-                    </span>
-                  </div>
-                </>
-              )}
-            </div>
-          </Tag>
-        );
-      })}
+              <div
+                class:list={[
+                  'p-8 flex flex-col flex-1',
+                  isProximamente && 'bg-white',
+                  !isProximamente &&
+                    isSoldOut &&
+                    'bg-slate-50/30 group-hover:bg-slate-50/70 transition-colors duration-700',
+                  !isProximamente && !isSoldOut && 'bg-white group-hover:bg-slate-50/50 transition-colors duration-700',
+                ]}
+              >
+                <div class="mb-4">
+                  <div
+                    class:list={[
+                      'h-px w-12 mb-4',
+                      isProximamente && 'bg-brand-600',
+                      !isProximamente &&
+                        isSoldOut &&
+                        'bg-slate-300 group-hover:bg-brand-600 transition-colors duration-500',
+                      !isProximamente && !isSoldOut && 'bg-brand-600',
+                    ]}
+                  />
+                  <h3
+                    class:list={[
+                      'text-2xl font-serif font-bold text-slate-900 mb-3',
+                      !isProximamente && !isSoldOut && 'group-hover:text-slate-700 transition-colors',
+                    ]}
+                  >
+                    {p.name}
+                  </h3>
+                </div>
+                {isProximamente ? (
+                  <>
+                    {p.description && (
+                      <p class="text-slate-600 leading-relaxed font-light mb-6">{p.description}</p>
+                    )}
+                    <PromocionCardWaitlist tag={p.tag} />
+                  </>
+                ) : (
+                  <>
+                    <p class="text-slate-600 leading-relaxed font-light flex-1">{p.description}</p>
+                    <div class="mt-6 pt-5 border-t border-slate-200">
+                      <span class="inline-flex items-center gap-2 text-brand-600 text-sm font-medium group-hover:gap-3 transition-all duration-300">
+                        Ver promoción
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </>
+                )}
+              </div>
+            </Tag>
+          );
+        })
+      }
     </div>
 
     <div id="mostrar-mas-wrapper" class="text-center mt-12">
