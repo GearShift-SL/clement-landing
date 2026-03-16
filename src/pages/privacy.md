@@ -98,18 +98,6 @@ Plazos de conservación: Los datos se conservarán hasta que se le adjudique un 
 Legitimación: Prestación del consentimiento del interesado.
 Destinatarios: Los datos facilitados y derivados del proceso de selección podrán ser cedidos a Terceras empresas identificadas por el interesado y que pudieran ser necesarias para la selección del candidato.
 
-**Alta y Seguimiento Cuentas Corporativas de Redes Sociales Web**: los datos personales que facilita o habilita a las redes sociales al convertirse en seguidor de las mismas.
-
-Las cuentas corporativas de las redes sociales de CLEMENT son las siguientes:
-
-FACEBOOK: @CLEMENTCALIDAD
-TWITTER: @CLEMENTCALIDAD
-LINKEDIN: @clement
-Datos recabados: Nombre Apellidos, NIF, dirección de contacto, domicilio, correo electrónico, teléfono de contacto, y demás datos propios de cada red social.
-Finalidad: Seguimiento red social.
-Legitimación: Prestación del consentimiento del Interesado.
-Plazos de conservación: Los datos se conservarán durante el tiempo necesario para la finalidad del tratamiento, y una vez finalizada la misma se podrán conservar por un periodo de seis años a disposición la administración pública, jueces y tribunales, para la atención y defensa de las posibles responsabilidades nacidas del tratamiento.
-
 **Clientes/Proveedores**: Datos personales profesionales facilitados por Clientes/Proveedores para la prestación de servicios y gestión de la relación jurídica o contractual.
 
 Datos recabados: Nombre Apellidos, DNI, dirección profesional de contacto, correo electrónico, teléfono de contacto, datos bancarios.
@@ -130,8 +118,7 @@ Existen otras finalidades por la que tratamos tus datos personales:
 
 - Para apoyar y mejorar los servicios que ofrece esta web.
 
-Igualmente, le informamos que determinadas funcionalidades de clement.es dependen del uso de cookies, por lo que, en el caso de que no haya denegado la posibilidad de su uso, se procederá al tratamiento de determinada información relacionada con su uso de clement.es. Puede ver las condiciones para su uso en la Política de cookies
-Para gestionar las redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de CLEMENT, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de clement.es. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de clement.es. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaremos los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.
+Igualmente, le informamos que determinadas funcionalidades de clement.es dependen del uso de cookies, por lo que, en el caso de que no haya denegado la posibilidad de su uso, se procederá al tratamiento de determinada información relacionada con su uso de clement.es. Puede ver las condiciones para su uso en la Política de cookies para gestionar las redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de CLEMENT, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de clement.es. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de clement.es. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaremos los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.
 CLEMENT no vende, alquila ni cede datos de carácter personal que puedan identificar al usuario, ni lo hará en el futuro a terceros sin el consentimiento previo.
 Ejercicio de derechos
 
