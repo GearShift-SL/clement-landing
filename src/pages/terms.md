@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Última actualización_: 17 de febrero de 2026
 
-El presente dominio clementpuertadehierro.com es propiedad de CLEMENT, S.A. (en adelante CLEMENT), con C.I.F. A-28283067, y domicilio social en Madrid, calle Santibáñez de Béjar, número 6, e inscrita en el Registro Mercantil de Madrid al Tomo 6.810 General, 5.792de la Sección 3ª del Libro de Sociedades, Folio 1, Hoja número 58.231 e Inscripción 1ª.
+El presente dominio clement.es es propiedad de CLEMENT, S.A. (en adelante CLEMENT), con C.I.F. A-28283067, y domicilio social en Madrid, calle Santibáñez de Béjar, número 6, e inscrita en el Registro Mercantil de Madrid al Tomo 6.810 General, 5.792de la Sección 3ª del Libro de Sociedades, Folio 1, Hoja número 58.231 e Inscripción 1ª.
 
 ## Condiciones
 

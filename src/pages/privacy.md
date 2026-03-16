@@ -13,7 +13,7 @@ Por el carácter jurídico de nuestra web no esta permitido el tratamiento de da
 
 ## Algunos principios que debes conocer
 
-En clementpuertadehierro.com es una prioridad el respeto y la protección de los datos personales de los usuarios. Como usuario debes saber que tus derechos están garantizados en esta web.
+En clement.es es una prioridad el respeto y la protección de los datos personales de los usuarios. Como usuario debes saber que tus derechos están garantizados en esta web.
 
 Nos hemos esforzado en crear un espacio seguro y confiable y por eso queremos compartir nuestros principios respecto a tu privacidad:
 
@@ -39,9 +39,9 @@ Para el tratamiento de datos de nuestros usuarios implementamos todas las medida
 
 ## ¿Cómo hemos obtenido tus datos?
 
-La visita a clementpuertadehierro.com no supone que el usuario esté obligado a facilitar ninguna información sobre sí mismo. No obstante, el uso de algunos de los servicios disponibles en clementpuertadehierro.com depende de la cumplimentación de formularios de información personal.
+La visita a clement.es no supone que el usuario esté obligado a facilitar ninguna información sobre sí mismo. No obstante, el uso de algunos de los servicios disponibles en clement.es depende de la cumplimentación de formularios de información personal.
 
-Los datos que se soliciten en los diferentes formularios de clementpuertadehierro.com son los necesarios para prestar los servicios solicitados. La negativa a proporcionar los datos señalados como necesarios puede suponer la imposibilidad de prestar adecuadamente dichos servicios. Así mismo, podrá facilitar datos de modo voluntario con el objetivo de que puedan prestarse de modo óptimo estos servicios:
+Los datos que se soliciten en los diferentes formularios de clement.es son los necesarios para prestar los servicios solicitados. La negativa a proporcionar los datos señalados como necesarios puede suponer la imposibilidad de prestar adecuadamente dichos servicios. Así mismo, podrá facilitar datos de modo voluntario con el objetivo de que puedan prestarse de modo óptimo estos servicios:
 
 Formulario de contacto
 
@@ -67,7 +67,7 @@ Los interesados también tendrán derecho a la tutela judicial efectiva y a pres
 
 Cuando un usuario se conecta con esta web para realizar una consulta desde el formulario de contacto, está facilitando información de carácter personal de la que es responsable CLEMENT. Esa información puede incluir datos de carácter personal como pueden ser tu dirección IP, nombre, dirección de correo electrónico, y otra información. Al facilitar esta información, el usuario da su consentimiento para que su información sea recopilada, utilizada, gestionada y almacenada por CLEMENT sólo como se describe en Información Legal y en la presente Política de Privacidad.
 
-En el clementpuertadehierro.com existen diferentes sistemas de captura de información personal y trato la información que nos facilitan las personas interesadas con el siguiente fin por cada sistema de captura (formularios):
+En el clement.es existen diferentes sistemas de captura de información personal y trato la información que nos facilitan las personas interesadas con el siguiente fin por cada sistema de captura (formularios):
 
 **Formulario de Contacto**: atención de consultas y solicitudes de contacto recibidas por cualquier medio relacionadas de los servicios de CLEMENT:
 
@@ -130,8 +130,8 @@ Existen otras finalidades por la que tratamos tus datos personales:
 
 - Para apoyar y mejorar los servicios que ofrece esta web.
 
-Igualmente, le informamos que determinadas funcionalidades de clementpuertadehierro.com dependen del uso de cookies, por lo que, en el caso de que no haya denegado la posibilidad de su uso, se procederá al tratamiento de determinada información relacionada con su uso de clementpuertadehierro.com. Puede ver las condiciones para su uso en la Política de cookies
-Para gestionar las redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de CLEMENT, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de clementpuertadehierro.com. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de clementpuertadehierro.com. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaremos los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.
+Igualmente, le informamos que determinadas funcionalidades de clement.es dependen del uso de cookies, por lo que, en el caso de que no haya denegado la posibilidad de su uso, se procederá al tratamiento de determinada información relacionada con su uso de clement.es. Puede ver las condiciones para su uso en la Política de cookies
+Para gestionar las redes sociales. El tratamiento de los datos que se lleve a cabo de las personas que se hagan seguidoras en las redes sociales de las páginas oficiales de CLEMENT, se regirá por este apartado. Así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que pertenezcan a la red social que proceda en cada caso y aceptadas previamente por el usuario de clement.es. Tratará sus datos con las finalidades de administrar correctamente su presencia en la red social, informando de actividades, productos o servicios de clement.es. Así como para cualquier otra finalidad que las normativas de las redes sociales permitan. En ningún caso utilizaremos los perfiles de seguidores en redes sociales para enviar publicidad de manera individual.
 CLEMENT no vende, alquila ni cede datos de carácter personal que puedan identificar al usuario, ni lo hará en el futuro a terceros sin el consentimiento previo.
 Ejercicio de derechos
 
@@ -141,7 +141,7 @@ En cualquier momento el Interesado podrá ejercitar sus derechos mediante la rem
 
 ## Legitimación para el tratamiento de tus datos
 
-La base legal para el tratamiento de sus datos es: el consentimiento. El tratamiento de los datos del usuario por parte de clementpuertadehierro.com se ampara en la solicitud por parte del usuario de los servicios puestos a disposición a través del presente portal web.
+La base legal para el tratamiento de sus datos es: el consentimiento. El tratamiento de los datos del usuario por parte de clement.es se ampara en la solicitud por parte del usuario de los servicios puestos a disposición a través del presente portal web.
 
 Para contactar o realizar comentarios en esta web se requiere el consentimiento con esta Política de Privacidad.
 
@@ -153,18 +153,18 @@ Mientras se mantenga la relación mercantil. Una vez finalizada dicha relación,
 No se solicite su supresión por parte del interesado.
 ¿A qué destinatarios se comunicarán tus datos?
 
-Para prestar servicios estrictamente necesarios para el desarrollo de la actividad, clementpuertadehierro.com comparte datos con los siguientes prestadores bajo sus correspondientes condiciones de privacidad.
+Para prestar servicios estrictamente necesarios para el desarrollo de la actividad, clement.es comparte datos con los siguientes prestadores bajo sus correspondientes condiciones de privacidad.
 
 Todas las utilidades ofrecidas por terceros son estrictamente necesarias para el desarrollo de nuestros servicios y han sido seleccionadas atendiendo al cumplimiento de los derechos que preservamos en esta web.
 
 Las siguientes empresas tendrán acceso a la información personal necesaria para realizar sus funciones como encargados de tratamiento, pero no podrán utilizarla para otros fines. Además, deberán tratar la información personal de conformidad con la presente Política de Privacidad y la legislación aplicable en materia de protección de datos.
 
 Hosting: Arsys Internet S.L.U, con NIF:B-85294916 con domicilio en C/ Chile nº 54, 26007, Logroño (La Rioja), España. Más información en www.arsys.es. Arsys Internet S.L.U, trata los datos con la finalidad de realizar sus servicios como proveedor de hosting a CLEMENT.
-Google Analytics: un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Google Analytics utiliza “cookies”, que son archivos de texto ubicados en tu ordenador, para ayudar a clementpuertadehierro.com a analizar el uso que hacen los usuarios del sitio web. La información que genera la cookie acerca de su uso de clementpuertadehierro.com (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos.
-Mailchimp: es un servicio de email prestado por MailChimp y operado por The Rocket Science Group LLC, una compañia con sede en el Estado de Georgia en los Estados Unidos. Mailchimp gestiona la información de contacto y los formularios de clementpuertadehierro.com, asi como las opciones que el usuario activa explicitamente en dichos formularios para aceptar la Política de Privacidad o el envio de correos electrónicos. Los datos personales estarán ubicados en los servidores de MailChimp. Los Estados Unidos se integran dentro del Marco de Privacy Shield UE-EE.UU y el Marco Privacy Shield Suiza-EE.UU, y son reconocidos como un pais con un nivel de seguridad adecuado por el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD)
+Google Analytics: un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Google Analytics utiliza “cookies”, que son archivos de texto ubicados en tu ordenador, para ayudar a clement.es a analizar el uso que hacen los usuarios del sitio web. La información que genera la cookie acerca de su uso de clement.es (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos.
+Mailchimp: es un servicio de email prestado por MailChimp y operado por The Rocket Science Group LLC, una compañia con sede en el Estado de Georgia en los Estados Unidos. Mailchimp gestiona la información de contacto y los formularios de clement.es, asi como las opciones que el usuario activa explicitamente en dichos formularios para aceptar la Política de Privacidad o el envio de correos electrónicos. Los datos personales estarán ubicados en los servidores de MailChimp. Los Estados Unidos se integran dentro del Marco de Privacy Shield UE-EE.UU y el Marco Privacy Shield Suiza-EE.UU, y son reconocidos como un pais con un nivel de seguridad adecuado por el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD)
 Datos de navegación
 
-Al navegar por clementpuertadehierro.com se pueden recoger datos identificables, que pueden incluir, direcciones IP, ubicación geográfica aproximada, un registro de cómo se utilizan los servicios y sitios, y otros datos que no pueden ser utilizados para identificar al usuario. Entre los datos no identificativos están también los relacionados a tus hábitos de navegación a través de servicios de terceros. Esta web utiliza los siguientes servicios de análisis de terceros, en concreto con Google Analytics funcionamos con la opción de IP anonimizada para evitar la identificación usuarios:
+Al navegar por clement.es se pueden recoger datos identificables, que pueden incluir, direcciones IP, ubicación geográfica aproximada, un registro de cómo se utilizan los servicios y sitios, y otros datos que no pueden ser utilizados para identificar al usuario. Entre los datos no identificativos están también los relacionados a tus hábitos de navegación a través de servicios de terceros. Esta web utiliza los siguientes servicios de análisis de terceros, en concreto con Google Analytics funcionamos con la opción de IP anonimizada para evitar la identificación usuarios:
 
 - Google Analytics.
 - Search Console.
@@ -173,7 +173,7 @@ Utilizamos esta información para analizar tendencias, administrar el sitio, ras
 
 ## Tus derechos al facilitar tus datos personales
 
-Cualquier persona tiene derecho a obtener confirmación sobre si en clementpuertadehierro.com se están tratando datos personales que les conciernan, o no.
+Cualquier persona tiene derecho a obtener confirmación sobre si en clement.es se están tratando datos personales que les conciernan, o no.
 
 Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos.
 
@@ -193,7 +193,7 @@ CLEMENT no puede garantizar la absoluta inexpugnabilidad de la red de Internet y
 
 ## Exactitud y veracidad de los datos
 
-Como usuario, eres el único responsable de la veracidad y corrección de los datos que remitas a clementpuertadehierro.com exonerando a CLEMENT, de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de contacto o suscripción.
+Como usuario, eres el único responsable de la veracidad y corrección de los datos que remitas a clement.es exonerando a CLEMENT, de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de contacto o suscripción.
 
 ## Aceptación y consentimiento
 
