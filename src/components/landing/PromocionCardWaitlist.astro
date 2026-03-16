@@ -56,6 +56,12 @@ const { tag } = Astro.props;
           body: JSON.stringify(payload),
         });
 
+        if (response.status === 409) {
+          form.innerHTML =
+            '<p class="text-sm text-green-600 font-light text-center">Ya está registrado en esta lista de espera.</p>';
+          return;
+        }
+
         if (!response.ok) throw new Error();
 
         form.innerHTML =

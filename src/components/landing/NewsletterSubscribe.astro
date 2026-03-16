@@ -89,6 +89,14 @@ const { tag = 'futuras-promociones' } = Astro.props;
         body: JSON.stringify(payload),
       });
 
+      if (response.status === 409) {
+        form.style.display = 'none';
+        successPanel.querySelector('p')!.textContent = 'Ya está suscrito a nuestra lista de espera.';
+        successPanel.classList.remove('hidden');
+        successPanel.style.display = 'flex';
+        return;
+      }
+
       if (!response.ok) throw new Error('Error en el envío');
 
       form.style.display = 'none';
