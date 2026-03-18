@@ -19,6 +19,7 @@ interface Promocion {
   tag: string;
   href?: string;
   extra?: boolean;
+  noWaitlist?: boolean;
 }
 
 const promociones: Promocion[] = [
@@ -29,6 +30,7 @@ const promociones: Promocion[] = [
     image: imgAlamedaOsunaVI,
     status: 'proximamente',
     tag: 'alameda-de-osuna-vi',
+    noWaitlist: true,
   },
   {
     name: 'Chalets Puerta de Hierro',
@@ -190,9 +192,17 @@ const statusLabel: Record<PromocionStatus, string> = {
                     {p.description && (
                       <p class="text-slate-600 leading-relaxed font-light mb-6 flex-1">{p.description}</p>
                     )}
-                    <div class="mt-6 pt-5 mb-[-5px]">
-                      <PromocionCardWaitlist tag={p.tag} />
-                    </div>
+                    {p.noWaitlist ? (
+                      <div class="mt-6 pt-5 border-t border-slate-200">
+                        <span class="inline-flex items-center gap-2 text-slate-400 text-sm font-medium uppercase tracking-widest">
+                          Próximamente
+                        </span>
+                      </div>
+                    ) : (
+                      <div class="mt-6 pt-5 mb-[-5px]">
+                        <PromocionCardWaitlist tag={p.tag} />
+                      </div>
+                    )}
                   </>
                 ) : (
                   <>
