@@ -66,5 +66,19 @@
       }
     }
   },
-  "mounts": ["source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"]
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+  },
+  // Allow npm global packages to be written by the user (claude code)
+  "postCreateCommand": "sudo chmod -R g+w /usr/local/share/npm-global",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached", // SSH keys for GitHub
+    "source=${localEnv:HOME}/.claude,target=/home/node/.claude,type=bind,consistency=cached"
+  ],
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude"
+  },
+  // Set the remote user to node instead of root
+  "remoteUser": "node",
+  "containerUser": "node"
 }
